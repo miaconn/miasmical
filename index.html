@@ -37,13 +37,21 @@
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="#home">
+          <button class="button">Top</button>
+        </a>
+        <a href="#one">
+          <button class="button">About</button>
+        </a>
+        <a href="#two">
+          <button class="button">Services</button>
+        </a>
+        <a href="#three">
+          <button class="button">Clients</button>
+        </a>
       </div>
   
-      <div class="row">
+      <div class="row" id="home">
       <br><br>
         <span onclick="openNav()">
           <button class="button-primary">||||</button>
@@ -57,32 +65,82 @@
         </span>
         </p>
         <hr>
+        <div id="navTabs" class="tab">
+          <button class="tablinks" onclick="openTab(event, 'postOne')">
+            Post One        
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'postTwo')">
+            Post Two
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'postThree')">
+            Post Three
+          </button>
+        </div>
+        <hr>
       </div>
 
 
       <div id="main">
-        <!--ROW 1-->
-        <div class ="row">
-            <div class = "three columns">
-                <p>
-                  <h5>
-                    header for this post
-                  </h5>
-                </p>
-            </div>
-            <div class = "nine columns">
-                <p>
-                  Nulla euismod orci vel pulvinar sodales. Ut vulputate ac urna ultrices ornare. Vivamus facilisis justo in lorem fermentum, non iaculis felis lacinia. Aliquam eget erat sapien. Maecenas euismod eu urna in rhoncus. Pellentesque vel luctus turpis. Nam lorem erat, porta sit amet diam in, finibus viverra dui. Pellentesque vitae fermentum massa, sed semper velit. Quisque vitae leo semper, tristique urna eu, ornare felis. Vestibulum eu quam id purus pretium tristique.
-                </p>
-            </div>
-        </div>
 
+        <!------------------------------------------------------>
+        <div class ="row tablinks" id ="one" onclick="openCity(event,'postOne')">
+          <div class = "three columns">
+              <p>
+              <img src = 'images/SiteBranding/cat_profile.png'          
+              width=100%
+              max-width=100%
+              height="auto">
+              </p>
+          </div>
+          <div class = "nine columns">
+              <p>
+              Nulla euismod orci vel pulvinar sodales. Ut vulputate ac urna ultrices ornare. Vivamus facilisis justo in lorem fermentum, non iaculis felis lacinia. Aliquam eget erat sapien. Maecenas euismod eu urna in rhoncus. Pellentesque vel luctus turpis. Nam lorem erat, porta sit amet diam in, finibus viverra dui. Pellentesque vitae fermentum massa, sed semper velit. Quisque vitae leo semper, tristique urna eu, ornare felis. Vestibulum eu quam id purus pretium tristique.
+              </p>
+          </div>
       </div>
+
+       <!------------------------------------------------------>
+      <div class ="row tablinks" id="two" onclick="openCity(event,'postTwo')">
+        <div class = "three columns">
+            <p>
+                <img src = 'images/SiteBranding/cat_profile.png'          
+                width=100%
+                max-width=100%
+                height="auto">
+            </p>
+        </div>
+        <div class = "nine columns">
+            <p>
+                Nulla euismod orci vel pulvinar sodales.<span id="dots">...</span><span id="more"></span>
+                 Ut vulputate ac urna ultrices ornare. Vivamus facilisis justo in lorem fermentum, non iaculis felis lacinia. Aliquam eget erat sapien. Maecenas euismod eu urna in rhoncus. Pellentesque vel luctus turpis. Nam lorem erat, porta sit amet diam in, finibus viverra dui. Pellentesque vitae fermentum massa, sed semper velit. Quisque vitae leo semper, tristique urna eu, ornare felis. Vestibulum eu quam id purus pretium tristique.
+            </p>
+        </div>
+      </div>
+
+       <!------------------------------------------------------>
+      <div class ="row tablinks" id="three" onclick="openCity(event,'postThree')">
+        <div class = "three columns">
+            <p>
+            <img src = 'images/SiteBranding/cat_profile.png'          
+            width=100%
+            max-width=100%
+            height="auto">
+            </p>
+        </div>
+        <div class = "nine columns">
+            <p>
+            Nulla euismod orci vel pulvinar sodales. Ut vulputate ac urna ultrices ornare. Vivamus facilisis justo in lorem fermentum, non iaculis felis lacinia. Aliquam eget erat sapien. Maecenas euismod eu urna in rhoncus. Pellentesque vel luctus turpis. Nam lorem erat, porta sit amet diam in, finibus viverra dui. Pellentesque vitae fermentum massa, sed semper velit. Quisque vitae leo semper, tristique urna eu, ornare felis. Vestibulum eu quam id purus pretium tristique.
+            </p>
+        </div>
+      </div>
+  
+    </div>
 </div>
 
 
 
 <script>
+/* Navigation Bar */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
@@ -93,6 +151,35 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
+
+/** END NAVBAR JAVASCRIPT**/
+
+/* Tab Filters*/
+
+function openTab(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+/* End Tab Filtering*/
+
+
 </script>
 
 <!-- End Document
