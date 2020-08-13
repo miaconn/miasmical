@@ -33,7 +33,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
-      
+<!--- SIDE NAVIGATION BAR --------------------------------------------------->
+
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br>
@@ -50,7 +51,9 @@
           <button class="button">Clients</button>
         </a>
       </div>
-  
+
+<!--- HEADER--------------------------------------------------->
+
       <div class="row" id="home">
       <br><br>
         <span onclick="openNav()">
@@ -62,80 +65,99 @@
                   width=75%
                   max-width=75%
                   height="auto">
-        </span>
+          </span>
         </p>
         <hr>
-        <div id="navTabs" class="tab">
-          <button class="tablinks" onclick="openTab(event, 'postOne')">
-            Post One        
-          </button>
-          <button class="tablinks" onclick="openCity(event, 'postTwo')">
-            Post Two
-          </button>
-          <button class="tablinks" onclick="openCity(event, 'postThree')">
-            Post Three
-          </button>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'postOne')">post one</button>
         </div>
-        <hr>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'postTwo')">post Two</button>
+        </div>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'postThree')">post three</button>
+        </div>
+
       </div>
 
+<!----- ROW ------------------------------------------------->
 
-      <div id="main">
-
-        <!------------------------------------------------------>
-        <div class ="row tablinks" id ="one" onclick="openCity(event,'postOne')">
-          <div class = "three columns">
-              <p>
-              <img src = 'images/SiteBranding/cat_profile.png'          
-              width=100%
-              max-width=100%
-              height="auto">
-              </p>
+        <div id ="postOne" class="tabcontent">
+          <div class ="row">
+            <div class = "three columns ">
+                <p>
+                <h5>
+                  Post 1
+                </h5>
+                <img src = 'images/SiteBranding/cat_profile.png'          
+                width=100%
+                max-width=100%
+                height="auto">
+                </p>
+            </div>
           </div>
-          <div class = "nine columns">
+
+          <!---- COLUMN -------------------------------------------------->
+
+          <div class = "nine columns ">
               <p>
               Nulla euismod orci vel pulvinar sodales. Ut vulputate ac urna ultrices ornare. Vivamus facilisis justo in lorem fermentum, non iaculis felis lacinia. Aliquam eget erat sapien. Maecenas euismod eu urna in rhoncus. Pellentesque vel luctus turpis. Nam lorem erat, porta sit amet diam in, finibus viverra dui. Pellentesque vitae fermentum massa, sed semper velit. Quisque vitae leo semper, tristique urna eu, ornare felis. Vestibulum eu quam id purus pretium tristique.
               </p>
           </div>
       </div>
 
-       <!------------------------------------------------------>
-      <div class ="row tablinks" id="two" onclick="openCity(event,'postTwo')">
-        <div class = "three columns">
-            <p>
-                <img src = 'images/SiteBranding/cat_profile.png'          
-                width=100%
-                max-width=100%
-                height="auto">
-            </p>
-        </div>
-        <div class = "nine columns">
-            <p>
-                Nulla euismod orci vel pulvinar sodales.<span id="dots">...</span><span id="more"></span>
-                 Ut vulputate ac urna ultrices ornare. Vivamus facilisis justo in lorem fermentum, non iaculis felis lacinia. Aliquam eget erat sapien. Maecenas euismod eu urna in rhoncus. Pellentesque vel luctus turpis. Nam lorem erat, porta sit amet diam in, finibus viverra dui. Pellentesque vitae fermentum massa, sed semper velit. Quisque vitae leo semper, tristique urna eu, ornare felis. Vestibulum eu quam id purus pretium tristique.
-            </p>
+<!-------- ROW ---------------------------------------------->
+      <div id="postTwo" class = "tabcontent">
+        <div class ="row " id="two">
+          <div class = "three columns">
+              <p>
+                <h5>
+                  Post 2
+                </h5>
+                  <img src = 'images/SiteBranding/cat_profile.png'          
+                  width=100%
+                  max-width=100%
+                  height="auto">
+              </p>
+          </div>
+        <!---- COLUMN -------------------------------------------------->
+
+          <div class = "nine columns">
+              <p>
+                  Nulla euismod orci vel pulvinar sodales. Ut vulputate ac urna ultrices ornare. Vivamus facilisis justo in lorem fermentum, non iaculis felis lacinia. Aliquam eget erat sapien. Maecenas euismod eu urna in rhoncus. Pellentesque vel luctus turpis. Nam lorem erat, porta sit amet diam in, finibus viverra dui. Pellentesque vitae fermentum massa, sed semper velit. Quisque vitae leo semper, tristique urna eu, ornare felis. Vestibulum eu quam id purus pretium tristique.
+              </p>
+          </div>
         </div>
       </div>
 
-       <!------------------------------------------------------>
-      <div class ="row tablinks" id="three" onclick="openCity(event,'postThree')">
-        <div class = "three columns">
-            <p>
-            <img src = 'images/SiteBranding/cat_profile.png'          
-            width=100%
-            max-width=100%
-            height="auto">
-            </p>
-        </div>
-        <div class = "nine columns">
-            <p>
-            Nulla euismod orci vel pulvinar sodales. Ut vulputate ac urna ultrices ornare. Vivamus facilisis justo in lorem fermentum, non iaculis felis lacinia. Aliquam eget erat sapien. Maecenas euismod eu urna in rhoncus. Pellentesque vel luctus turpis. Nam lorem erat, porta sit amet diam in, finibus viverra dui. Pellentesque vitae fermentum massa, sed semper velit. Quisque vitae leo semper, tristique urna eu, ornare felis. Vestibulum eu quam id purus pretium tristique.
-            </p>
+<!-------- ROW ---------------------------------------------->
+      <div id ="postThree" class = "tabcontent">
+        <div class ="row " id="three">
+          <div class = "three columns">
+              <p>
+                <h5>
+                  Post 3
+                </h5>
+              <img src = 'images/SiteBranding/cat_profile.png'          
+              width=100%
+              max-width=100%
+              height="auto">
+              </p>
+          </div>
+
+          <!---- COLUMN -------------------------------------------------->
+
+          <div class = "nine columns">
+              <p>
+              Nulla euismod orci vel pulvinar sodales. Ut vulputate ac urna ultrices ornare. Vivamus facilisis justo in lorem fermentum, non iaculis felis lacinia. Aliquam eget erat sapien. Maecenas euismod eu urna in rhoncus. Pellentesque vel luctus turpis. Nam lorem erat, porta sit amet diam in, finibus viverra dui. Pellentesque vitae fermentum massa, sed semper velit. Quisque vitae leo semper, tristique urna eu, ornare felis. Vestibulum eu quam id purus pretium tristique.
+              </p>
+          </div>
         </div>
       </div>
-  
-    </div>
-</div>
+</div> <!--end container-->
 
 
 
@@ -152,11 +174,11 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
 }
 
-/** END NAVBAR JAVASCRIPT**/
+/** END NAVBAR **/
 
-/* Tab Filters*/
+/* FILTERING */
 
-function openTab(evt, cityName) {
+function openTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -173,12 +195,11 @@ function openTab(evt, cityName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 
-/* End Tab Filtering*/
-
+/* end FILTERING */
 
 </script>
 
