@@ -40,36 +40,26 @@
         <br>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'postOne')" id="defaultOpen">post one</button>
+          <button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">home</button>
         </div>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'postTwo')">post Two</button>
+          <button class="tablinks" onclick="openTab(event, 'about')">about</button>
         </div>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'postThree')">post three</button>
+          <button class="tablinks" onclick="openTab(event, 'portfolio')">portfolio</button>
         </div>
 
-        <!---
-        <a href="#home">
-          <button class="button">Top</button>
-        </a>
-        <a href="#one">
-          <button class="button">About</button>
-        </a>
-        <a href="#two">
-          <button class="button">Services</button>
-        </a>
-        <a href="#three">
-          <button class="button">Clients</button>
-        </a>
-      -->
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'contact')">contact</button>
+        </div>
+
       </div>
 
 <!--- HEADER--------------------------------------------------->
 
-      <div class="row" id="home">
+      <div class="row" id="head">
       <br><br>
         <span onclick="openNav()">
           <button class="button-primary">||||</button>
@@ -90,12 +80,12 @@
 
 <!----- ROW ------------------------------------------------->
 
-        <div id ="postOne" class="tabcontent">
-          <div class ="row" id="one">
+        <div id ="home" class="tabcontent">
+          <div class ="row" id="home">
             <div class = "three columns ">
                 <p>
                 <h5>
-                  Post 1
+                  Home
                 </h5>
                 <img src = 'images/SiteBranding/cat_profile.png'          
                 width=50%
@@ -115,12 +105,12 @@
       </div>
 
 <!-------- ROW ---------------------------------------------->
-      <div id="postTwo" class = "tabcontent">
-        <div class ="row " id="two">
+      <div id="about" class = "tabcontent">
+        <div class ="row " id="about">
           <div class = "three columns">
               <p>
                 <h5>
-                  Post 2
+                  About
                 </h5>
                   <img src = 'images/SiteBranding/cat_profile.png'          
                   width=50%
@@ -139,12 +129,12 @@
       </div>
 
 <!-------- ROW ---------------------------------------------->
-      <div id ="postThree" class = "tabcontent">
-        <div class ="row " id="three">
+      <div id ="portfolio" class = "tabcontent">
+        <div class ="row " id="portfolio">
           <div class = "three columns">
               <p>
                 <h5>
-                  Post 3
+                  Portfolio 
                 </h5>
               <img src = 'images/SiteBranding/cat_profile.png'          
               width=50%
@@ -162,6 +152,33 @@
           </div>
         </div>
       </div>
+      
+
+<!-------- ROW ---------------------------------------------->
+<div id ="contact" class = "tabcontent">
+  <div class ="row " id="contact">
+    <div class = "three columns">
+        <p>
+          <h5>
+            Contact
+          </h5>
+        <img src = 'images/SiteBranding/cat_profile.png'          
+        width=50%
+        max-width=50%
+        height="auto">
+        </p>
+    </div>
+
+    <!---- COLUMN -------------------------------------------------->
+
+    <div class = "nine columns">
+        <p>
+        Nulla euismod orci vel pulvinar sodales. Ut vulputate ac urna ultrices ornare. Vivamus facilisis justo in lorem fermentum, non iaculis felis lacinia. Aliquam eget erat sapien. Maecenas euismod eu urna in rhoncus. Pellentesque vel luctus turpis. Nam lorem erat, porta sit amet diam in, finibus viverra dui. Pellentesque vitae fermentum massa, sed semper velit. Quisque vitae leo semper, tristique urna eu, ornare felis. Vestibulum eu quam id purus pretium tristique.
+        </p>
+    </div>
+  </div>
+</div>
+
 </div> <!--end container-->
 
 
