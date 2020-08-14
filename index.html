@@ -70,7 +70,7 @@
         <hr>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'postOne')">post one</button>
+          <button class="tablinks" onclick="openTab(event, 'postOne')" id="defaultOpen">post one</button>
         </div>
 
         <div class="tab">
@@ -86,7 +86,7 @@
 <!----- ROW ------------------------------------------------->
 
         <div id ="postOne" class="tabcontent">
-          <div class ="row">
+          <div class ="row" id="one">
             <div class = "three columns ">
                 <p>
                 <h5>
@@ -198,6 +198,8 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 
 /* end FILTERING */
 
