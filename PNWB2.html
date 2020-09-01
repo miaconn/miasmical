@@ -15,32 +15,33 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600&family=Fredoke+One" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600&family=Fredoke+One&family=Dosis" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/skeleton_pnwb.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/SiteBranding/tabIcon.png">
 
 </head>
+<style>
+</style>
+
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+<div class="container">
 
-<!--- SIDE NAVIGATION BAR --------------------------------------------------->
-
-      <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">home</button>
+          <button class="button-primary" onclick="openTab(event, 'home')" id="defaultOpen">home</button>
         </div>
 
         <div class="tab">
@@ -55,24 +56,51 @@
           <button class="tablinks" onclick="openTab(event, 'portfolio')">portfolio</button>
         </div>
 
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'contact')">contact</button>
-        </div>
-
       </div>
 
-<!--- HEADER--------------------------------------------------->
+      <span onclick="openNav()">
+        <button class="button-primary">site navigation</button>
+      </span>
 
-      <div class="row" id="head">
-        <div class="one column">
-          <span onclick="openNav()">
-            <button class="button-primary">||||</button>
-          </span>
+  
+  <!--<div class="row main">
+ 
+        <div id="about" class="tabcontent">
+            <h1>
+              About 
+            </h1>
         </div>
-      </div>
+        
+        <div id="membership" class="tabcontent">
+          <h1>
+            Membership
+          </h1>
+        </div>
+        
+        <div id="events" class="tabcontent">
+          <h1>
+            Events
+          </h1>
+        </div>
 
-<!----- ROW ------------------------------------------------->
+        <div id="gallery" class="tabcontent">
+          <h1>
+            Gallery
+          </h1>
+        </div>
+  
+        <div id="blog" class="tabcontent">
+          <h1>
+            Blog
+          </h1>
+        </div>
 
+        <div id="contact" class="tabcontent">
+          <h1>
+            Contact
+          </h1>
+        </div>
+  </div>-->
 
 
 </div> <!--end container-->
@@ -80,6 +108,7 @@
 
 
 <script>
+
 /* Navigation Bar */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -91,35 +120,6 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
-
-/** END NAVBAR **/
-
-/* FILTERING */
-
-function openTab(evt, tabName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-/* end FILTERING */
 
 </script>
 

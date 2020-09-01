@@ -15,64 +15,89 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600&family=Fredoke+One" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600&family=Fredoke+One&family=Dosis" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/skeleton_pnwb.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/SiteBranding/tabIcon.png">
 
 </head>
+
+<style>
+</style>
+
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+<div class="container">
 
-<!--- SIDE NAVIGATION BAR --------------------------------------------------->
+  <div class="row">
+    <div class ="twelve columns">
 
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <br>
-
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">home</button>
-        </div>
-
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'about')">about</button>
-        </div>
-
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'services')">services</button>
-        </div>
-
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'portfolio')">portfolio</button>
-        </div>
-
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'contact')">contact</button>
-        </div>
-
+      <div class="tab" style="position:fixed">
+        <button class="tablinks" onclick="openTab(event, 'about')" id="defaultOpen">About</button><br>
+        <button class="tablinks" onclick="openTab(event, 'membership')">Membership</button><br>
+        <button class="tablinks" onclick="openTab(event, 'events')">Events</button><br>
+        <button class="tablinks" onclick="openTab(event, 'gallery')">Gallery</button><br>
+        <button class="tablinks" onclick="openTab(event, 'blog')">Blog</button><br>
+        <button class="tablinks" onclick="openTab(event, 'contact')">Contact</button><br>
+        </a>
       </div>
+      <br>
+      <p>
+        <h1>
+          Northwest Bonsai
+        </h1>
+      </p>
+    </div>
+  </div>
 
-<!--- HEADER--------------------------------------------------->
 
-      <div class="row" id="head">
-        <div class="one column">
-          <span onclick="openNav()">
-            <button class="button-primary">||||</button>
-          </span>
+
+  <div class="row main">
+        <!-- Tab content -->
+        <div id="about" class="tabcontent">
+            <h1>
+              About 
+            </h1>
         </div>
-      </div>
+        
+        <div id="membership" class="tabcontent">
+          <h1>
+            Membership
+          </h1>
+        </div>
+        
+        <div id="events" class="tabcontent">
+          <h1>
+            Events
+          </h1>
+        </div>
 
-<!----- ROW ------------------------------------------------->
+        <div id="gallery" class="tabcontent">
+          <h1>
+            Gallery
+          </h1>
+        </div>
+  
+        <div id="blog" class="tabcontent">
+          <h1>
+            Blog
+          </h1>
+        </div>
 
+        <div id="contact" class="tabcontent">
+          <h1>
+            Contact
+          </h1>
+        </div>
+  </div>
 
 
 </div> <!--end container-->
@@ -80,22 +105,6 @@
 
 
 <script>
-/* Navigation Bar */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-}
-
-/** END NAVBAR **/
-
-/* FILTERING */
-
 function openTab(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -116,11 +125,19 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-/* end FILTERING */
-
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 </script>
 
 <!-- End Document
