@@ -35,9 +35,7 @@
 
 <!--- SIDE NAVIGATION BAR --------------------------------------------------->
 
-      <div id="mySidenav" class="sidenav" 
-           style="background-image:url(images/SiteBranding/ConcentricCircles.png);
-          background-repeat:repeat;">
+      <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br>
       
@@ -90,11 +88,14 @@
             
             <img src="images/SiteBranding/SiteBanner.png" style="width:60%;height:auto;max-width: 100%; ">
 
-            <span onclick="openNav()">
+            <img src="images/SiteBranding/Asset 7.png" onclick="openNav()" style="float:right;">
+
+       <!--     <span onclick="openNav()">
+              <img src="images/SiteBranding/Asset 7.png">
               <button class="button-primary" style="float:right;">
                 open navigation
               </button>
-            </span> 
+            </span> -->
         </div>
       </div>
 <!----- ROW ------------------------------------------------->
@@ -196,8 +197,8 @@
 <script>
 /* Navigation Bar */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "154px";
-  document.getElementById("main").style.marginLeft = "154px";
+  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "200px";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
