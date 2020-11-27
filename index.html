@@ -140,10 +140,10 @@
 <!--Portfolio-->
 <div class="row">
   <div class="twelve columns tabcontent" id ="portfolio" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;">
-    <h3>
-      Portfolio
-    </h3>
+    
     <p>
+      <img src="images/SiteBranding/portfolio_header.png" style="max-width: 15%;height:auto;"><br>
+
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet nulla dignissim, laoreet orci in, convallis diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio odio, commodo eget enim ac, imperdiet feugiat arcu. Phasellus sapien mauris, elementum at tellus vitae, pellentesque suscipit nisl. Ut sed augue non mauris euismod sagittis. Aliquam lobortis eros mi. Donec convallis ornare pellentesque. Phasellus vitae tellus ut tellus tempus aliquam non id justo. Mauris lacinia ipsum eget accumsan lacinia. Cras aliquet volutpat facilisis. Nam posuere nibh aliquam est ornare sodales.
     </p>
   </div>
@@ -206,6 +206,35 @@ function openTab(evt, tabName) {
 document.getElementById("defaultOpen").click();
 
 /* end FILTERING */
+
+/*slide show*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 
 </script>
 
