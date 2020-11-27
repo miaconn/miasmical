@@ -163,7 +163,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #fd603b; }
+  color: #34bf98; }
 a:hover {
   color: #f7d4d1; }
 
@@ -211,8 +211,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #fd603b;
-  border-color: #fd603b; }
+  background-color: #f3167d;
+  border-color: #f3167d; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -224,8 +224,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #fd603b;
-  border-color: #fd603b; }
+  background-color: #f3167d;
+  border-color: #f3167d; }
 
   .show {
     display: block;
@@ -255,12 +255,12 @@ input[type="button"].button-primary:focus {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #fd603b;
+  background-color: #f3167d;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #fd603b;
+  background-color: #f3167d;
 }
 
 /* Style the tab content */
@@ -316,7 +316,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #f3167d;
   outline: 0; }
 label,
 legend {
@@ -452,7 +452,7 @@ hr {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #9aabcf ; /* Black*/
+  background-color: #f24c5a ; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -470,7 +470,7 @@ hr {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #fd603b;
+  color: #34bf98;
 }
 
 /* Position and style the close button (top right corner) */
