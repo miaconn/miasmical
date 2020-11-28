@@ -39,22 +39,20 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <br>
       
-      
+        <img src="images/SiteBranding/novlogo4.png" style="max-width: 70%;height: auto;padding-left: 2.5%;">
+
+
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">home</button>
+          <button class="tablinks" onclick="openTab(event, 'about')">ABOUT</button>
         </div>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'about')">about</button>
+          <button class="tablinks" onclick="openTab(event, 'portfolio')" id="defaultOpen">PORTFOLIO</button>
         </div>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'portfolio')">portfolio</button>
-        </div>
-
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'contact')">contact</button>
+          <button class="tablinks" onclick="openTab(event, 'contact')">CONTACT</button>
         </div>
 
         <br>
@@ -74,27 +72,17 @@
 <!----- ROW ------------------------------------------------->
       <br>
       <div class="row">
-        <div class="twelve columns" 
-             style="background-color:#c0c8b3;
-                    padding-left:2.5%;
-                    padding-top:2.5%;
-                    padding-right:2.5%;
-                    border-radius: 4px;
-                    float:justify;">
-        <tr>
+        <div class="tweleve columns" style="float:justify;border-radius: 4px;float:right;margin-left:auto;margin-right:auto;display: block; background-color: #c0c8b3;padding-left: 2.5%;padding-top: 2.5%;" >
+   
+           
 
-        <td>
-            <img src="images/SiteBranding/novlogo4.png" style="max-width:20%;height:auto;">
-        </td>
-        <td style="align-items: center;">
-            <span onclick="openNav()">
-              <button class="button-primary" style="float:right;justify-content: center;align-items: center;display: flex;">
-                OPEN
-              </button>
-            </span> 
-            
-        </td>
-        </tr>
+            <span onclick="openNav()" style="margin-left:auto;margin-right:auto;display: block;">
+                <button class="button-primary" >
+                  SITE NAVIGATION
+                </button>
+              </span> 
+              
+     
         </div>
       </div>
 <!----- ROW ------------------------------------------------->
@@ -103,19 +91,12 @@
 
 <!--HOME-->
 <br>
-<div class="row">
-  <div class="twelve columns tabcontent" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;" id="home">
-   <h3>
-     home
-   </h3>
-  </div>
-</div>
 
 <!--about-->
 <div class="row">
   <div class="twelve columns tabcontent" id ="about" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;">
     <h3>
-      about 
+      About 
     </h3>
     <p>
   </div>
@@ -124,12 +105,14 @@
 
 <!--Portfolio-->
 <div class="row">
-  <div class="twelve columns tabcontent" id ="portfolio" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;">
+  <div class="twelve columns tabcontent" id ="portfolio" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;padding-top: 2.5%;">
       <h3>
-        portfolio
+        Portfolio
       </h3>
-    <!-- Slideshow container -->
-      <div class="slideshow-container">
+    
+    
+      <!-- Slideshow container 1 -->
+      <div class="slideshow-container" id="slideshow1">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
@@ -153,22 +136,68 @@
         </div>
 
         <div class="mySlides fade">
-          <img src="images/Portfolio/FreeDoh/BWLogo-03.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <img src="images/Portfolio/FreeDoh/BWLogo-02.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
         </div>
 
+        <div class="mySlides fade">
+          <img src="images/Portfolio/TheModern/1_Hero_Image.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Portfolio/TheModern/2_Vertical_Logos.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Portfolio/TheModern/3_Horizontal_Logos.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Portfolio/TheModern/4_ExteriorMockUps.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Portfolio/TheModern/5_BagMockUp.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Portfolio/TheModern/8_TypeAndColor.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Portfolio/VideoFlux/1.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Portfolio/VideoFlux/2.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Portfolio/VideoFlux/3.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Portfolio/VideoFlux/4.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/Portfolio/VideoFlux/5.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+        </div>
 
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
       </div>
+    
       <br>
 
       <!-- The dots/circles -->
       <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+        <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+        <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
       </div>
+    <!-- END SLIDE SHOW 1-->
+      <BR>
 
 
 
@@ -182,10 +211,20 @@
 <div class="row">
   <div class="twelve columns tabcontent" id ="contact" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;">
     <h3>
-      contact me
+      Contact & Social Media
     </h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet nulla dignissim, laoreet orci in, convallis diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio odio, commodo eget enim ac, imperdiet feugiat arcu. Phasellus sapien mauris, elementum at tellus vitae, pellentesque suscipit nisl. Ut sed augue non mauris euismod sagittis. Aliquam lobortis eros mi. Donec convallis ornare pellentesque. Phasellus vitae tellus ut tellus tempus aliquam non id justo. Mauris lacinia ipsum eget accumsan lacinia. Cras aliquet volutpat facilisis. Nam posuere nibh aliquam est ornare sodales.
+      <ul>
+        <li>
+          Email - miasmical.create@gmail.com
+        </li>
+        <li>
+          <a href="https://www.instagram.com/miasmical.create/">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/miaconn"> Behance</a>
+        </li>
+      </ul>
     </p>
   </div>
 </div>
@@ -236,35 +275,40 @@ document.getElementById("defaultOpen").click();
 
 /* slide show*/
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
 }
 
-function showSlides(n) {
+function showSlides(n, slideshow) {
+  
+
+
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
 }
-
 </script>
 
 <!-- End Document
