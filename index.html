@@ -22,6 +22,11 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
 
+  <!-- 
+    jQuery
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/SiteBranding/tabIcon.png">
@@ -33,7 +38,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div class="container">
 
-<!--- SIDE NAVIGATION BAR --------------------------------------------------->
+<!--- SIDE NAVIGATION BAR ------------------------------bbbe99-------------------->
 
       <div id="mySidenav" class="sidenav"> <!--- style="background-image: url('images/SiteBranding/NavBanner.png');background-size: contain;background-repeat: no-repeat;">-->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -48,12 +53,20 @@
         </div>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'portfolio')" id="defaultOpen">PORTFOLIO</button>
+          <button class="tablinks" onclick="openTab(event, 'portfolio')" >PORTFOLIO</button>
+        </div>
+
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'digitalart')"id="defaultOpen" >DIGITAL ART</button>
         </div>
 
         <div class="tab">
           <button class="tablinks" onclick="openTab(event, 'contact')">CONTACT</button>
         </div>
+
+        <a href = "https://www.instagram.com/miasmical.create/" target="_blank">
+          <img src="images/SiteBranding/Instagram.png" style="max-width: 30%;height:auto;margin-left:2.5%;margin-right:auto;display: block;">
+        </a>
 
 
       </div>
@@ -90,13 +103,13 @@
 <br>
 
 <div class="row">
-  <div class="twelve columns" style="padding-left: 2.5%;padding-top: 2.5%;font-family:Verveine;font-size: 2.4rem;">
+  <div class="twelve columns" style="padding-left: 2.5%;padding-top: 2.5%;font-family:Verveine;font-size: 2.4rem;text-align: right;">
 
       <img src="images/SiteBranding/leaf_logo.png" style="max-width: 30%;height: auto;margin-left:auto;margin-right:auto;display: block">
 
 
     <!--<h3 style="text-align: center;line-height: 90%;letter-spacing: 2px;" onclick="openNav()"> Site Navigation </h3>-->
-    <a href ='#' onclick="openNav()"> Site Navigation</a> | 
+    <a href ='#' onclick="openNav()"> Site Navigation</a> 
   
   </div>
 
@@ -104,11 +117,22 @@
 
 <!--about-->
 <div class="row">
-  <div class="twelve columns tabcontent" id ="about" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;">
-    <h2>
-      About Me 
-    </h2>
+  <div class="twelve columns tabcontent" id ="about" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;padding-top: 2.5%;">
+    <h4>
+      PROFESSIONAL EXPERIENCE
+    </h4>
     <p>
+      Sr. Software Development - Data Engineering<br>
+      asdf
+    </p>
+    <h4>
+      EDUCATION
+    </h4>
+    <p>
+        Bachelors in Business Administration - Management Information Systems Concentration<br>
+        Western Washington University, 2015
+    </p>
+    
   </div>
 </div>
 
@@ -116,81 +140,187 @@
 <!--Portfolio-->
 <div class="row">
   <div class="twelve columns tabcontent" id ="portfolio" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;padding-top: 2.5%;">
-      <h2>
-        Portfolio
-      </h2>
+      <h4>
+        PORTFOLIO
+      </h4>
     
     
       <!-- Slideshow container 1 -->
-      <div class="slideshow-container" id="slideshow1">
+      <div class="slideshow-container" id="slideshow1" >
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-          <img src="images/Portfolio/FreeDoh/BWLogo-03.png"  alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <img src="images/Portfolio/FreeDoh/BWLogo-02.png"  alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              FreeDoh Gluten Free Bakery
+            </h5>
+              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+              Mockup template from <a href="https://graphicburger.com/hanging-wall-sign-mockup-3/" target="_blank">Graphic Burger</a>
+          </div>
+
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/FreeDoh/BWLogo-01.png"  alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              FreeDoh Gluten Free Bakery
+            </h5>
+              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/FreeDoh/BWLogo-06.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              FreeDoh Gluten Free Bakery
+            </h5>
+              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/FreeDoh/BWLogo-04.png"  alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              FreeDoh Gluten Free Bakery
+            </h5>
+              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/FreeDoh/BWLogo-05.png"  alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              FreeDoh Gluten Free Bakery
+            </h5>
+              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+              Mockup template from <a href="https://graphicburger.com/logo-mockups-paper-edition/" target="_blank">Graphic Burger</a>
+          </div>
+
         </div>
 
         <div class="mySlides fade">
-          <img src="images/Portfolio/FreeDoh/BWLogo-02.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <img src="images/Portfolio/FreeDoh/BWLogo-03.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              FreeDoh Gluten Free Bakery
+            </h5>
+              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/TheModern/1_Hero_Image.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              The Modern Luxury Hotel & Spa
+            </h5>
+              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/TheModern/2_Vertical_Logos.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              The Modern Luxury Hotel & Spa
+            </h5>
+              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/TheModern/3_Horizontal_Logos.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              The Modern Luxury Hotel & Spa
+            </h5>
+              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/TheModern/4_ExteriorMockUps.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              The Modern Luxury Hotel & Spa
+            </h5>
+              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/TheModern/5_BagMockUp.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              The Modern Luxury Hotel & Spa
+            </h5>
+              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/TheModern/8_TypeAndColor.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              The Modern Luxury Hotel & Spa
+            </h5>
+              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/VideoFlux/1.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              Video Flux Social Media App
+            </h5>
+             Video Flux is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/VideoFlux/2.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              Video Flux Social Media App
+            </h5>
+             Video Flux is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/VideoFlux/3.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              Video Flux Social Media App
+            </h5>
+             Video Flux is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/VideoFlux/4.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              Video Flux Social Media App
+            </h5>
+             Video Flux is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <div class="mySlides fade">
           <img src="images/Portfolio/VideoFlux/5.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
+          <div class="slidetext">
+            <h5>
+              Video Flux Social Media App
+            </h5>
+             Video Flux is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
+          </div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -219,10 +349,10 @@
 
 <!--Contact-->
 <div class="row">
-  <div class="twelve columns tabcontent" id ="contact" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;">
-    <h2>
+  <div class="twelve columns tabcontent" id ="contact" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;padding-top: 2.5%;">
+    <h4>
       Contact & Social Media
-    </h2>
+    </h4>
     <p>
       <ul>
         <li>
@@ -232,12 +362,59 @@
           <a href="https://www.instagram.com/miasmical.create/">Instagram</a>
         </li>
         <li>
+          LinkedIn
+        </li>
+        <li>
           <a href="https://www.behance.net/miaconn"> Behance</a>
         </li>
       </ul>
     </p>
   </div>
 </div>
+
+<div class="row">
+  <div class="twelve columns tabcontent" id ="digitalart" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;padding-top: 2.5%;">
+    <h4>
+      DIGITAL ART
+    </h4>
+    
+    <div class="row">
+      <div class="column">
+  <!-- Trigger the Modal -->
+        <img src="images/Portfolio/TheModern/1_Hero_Image.png" class="myImg" >
+        <img src="images/Portfolio/TheModern/2_Vertical_Logos.png" class="myImg" > 
+        <img src="images/Portfolio/TheModern/3_Horizontal_Logos.png" class="myImg"  >
+
+      </div>
+      <div class="column">
+        
+        <img src="images/Portfolio/TheModern/4_ExteriorMockUps.png" class="myImg" >
+        <img src="images/Portfolio/TheModern/5_BagMockUp.png" class="myImg">
+        <img src="images/Portfolio/TheModern/6_GiftCardMockUp.png" class="myImg"  >
+
+      </div>
+      <div class="column">
+        <img src="images/Portfolio/TheModern/7_InteriorSignage.png" class="myImg"  >
+        <img src="images/Portfolio/TheModern/8_TypeAndColor.png" class="myImg" >
+      </div>
+
+    <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 </div>
 </div> <!--end container-->
 
@@ -318,6 +495,29 @@ function showSlides(n, slideshow) {
   }
   slides[slideshow.currentSlideIndex-1].style.display = "block";  
   dots[slideshow.currentSlideIndex-1].className += " active";
+}
+
+/*modal images*/
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
 }
 </script>
 
