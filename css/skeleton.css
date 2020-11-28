@@ -463,6 +463,8 @@ hr {
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #bbbe99 ; /* Black*/
+  background-image: url("images/SiteBranding/moss_gradient.png");
+  background-repeat: repeat;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
