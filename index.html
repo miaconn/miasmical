@@ -53,11 +53,11 @@
         </div>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'portfolio')" >PORTFOLIO</button>
+          <button class="tablinks" onclick="openTab(event, 'portfolio')" id="defaultOpen">PORTFOLIO</button>
         </div>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'digitalart')"id="defaultOpen" >DIGITAL ART</button>
+          <button class="tablinks" onclick="openTab(event, 'digitalart')" >DIGITAL ART</button>
         </div>
 
         <div class="tab">
@@ -139,206 +139,71 @@
 
 <!--Portfolio-->
 <div class="row">
-  <div class="twelve columns tabcontent" id ="portfolio" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;padding-top: 2.5%;">
+  <div class="twelve columns tabcontent" id ="portfolio" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;padding-top: 2.5%;padding-bottom: 2.5%;">
       <h4>
         PORTFOLIO
       </h4>
     
-    
-      <!-- Slideshow container 1 -->
-      <div class="slideshow-container" id="slideshow1" >
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <img src="images/Portfolio/FreeDoh/BWLogo-02.png"  alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              FreeDoh Gluten Free Bakery
-            </h5>
-              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-              Mockup template from <a href="https://graphicburger.com/hanging-wall-sign-mockup-3/" target="_blank">Graphic Burger</a>
-          </div>
-
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> All Projects</button>
+          <button class="btn" onclick="filterSelection('freedoh')"> FreeDoh</button>
+          <button class="btn" onclick="filterSelection('TheModern')"> The Modern</button>
+          <button class="btn" onclick="filterSelection('VideoFlux')"> Video Flux</button>
         </div>
+        
+      <!--begin image grid-->
 
-        <div class="mySlides fade">
-          <img src="images/Portfolio/FreeDoh/BWLogo-01.png"  alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              FreeDoh Gluten Free Bakery
-            </h5>
-              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
+      <div class="row">
+        <div class="column">
+          <img src="images/Portfolio/FreeDoh/BWLogo-05.png" class="filterDiv freedoh myImages" id="myImg" alt="FreeDoh Gluten-Free Bakery: Printed paper mockup">
+          <img src="images/Portfolio/FreeDoh/BWLogo-02.png" class="filterDiv freedoh myImages" id="myImg" alt="FreeDoh Gluten-Free Bakery: Exterior Sign mockup">
         </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/FreeDoh/BWLogo-06.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              FreeDoh Gluten Free Bakery
-            </h5>
-              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
+        <div class="column">
+          <img src="images/Portfolio/FreeDoh/BWLogo-01.png" class="filterDiv freedoh myImages" id="myImg" alt="FreeDoh Gluten-Free Bakery: BW Typography Logos">
+          <img src="images/Portfolio/FreeDoh/BWLogo-06.png" class="filterDiv freedoh myImages" id="myImg" alt="FreeDoh Gluten-Free Bakery: Badge logos">     
         </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/FreeDoh/BWLogo-04.png"  alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              FreeDoh Gluten Free Bakery
-            </h5>
-              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
+        <div class="column">
+          <img src="images/Portfolio/FreeDoh/BWLogo-04.png" class="filterDiv freedoh myImages" id="myImg" alt="FreeDoh Gluten-Free Bakery: Typography & logo details">
+          <img src="images/Portfolio/FreeDoh/BWLogo-03.png" class="filterDiv freedoh myImages" id="myImg" alt="FreeDoh Gluten-Free Bakery: Color Typography logos"> 
         </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/FreeDoh/BWLogo-05.png"  alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              FreeDoh Gluten Free Bakery
-            </h5>
-              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-              Mockup template from <a href="https://graphicburger.com/logo-mockups-paper-edition/" target="_blank">Graphic Burger</a>
-          </div>
-
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/FreeDoh/BWLogo-03.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              FreeDoh Gluten Free Bakery
-            </h5>
-              FreeDoh is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/TheModern/1_Hero_Image.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              The Modern Luxury Hotel & Spa
-            </h5>
-              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/TheModern/2_Vertical_Logos.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              The Modern Luxury Hotel & Spa
-            </h5>
-              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/TheModern/3_Horizontal_Logos.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              The Modern Luxury Hotel & Spa
-            </h5>
-              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/TheModern/4_ExteriorMockUps.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              The Modern Luxury Hotel & Spa
-            </h5>
-              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/TheModern/5_BagMockUp.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              The Modern Luxury Hotel & Spa
-            </h5>
-              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/TheModern/8_TypeAndColor.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              The Modern Luxury Hotel & Spa
-            </h5>
-              The Modern is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/VideoFlux/1.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              Video Flux Social Media App
-            </h5>
-             Video Flux is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/VideoFlux/2.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              Video Flux Social Media App
-            </h5>
-             Video Flux is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/VideoFlux/3.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              Video Flux Social Media App
-            </h5>
-             Video Flux is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/VideoFlux/4.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              Video Flux Social Media App
-            </h5>
-             Video Flux is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="images/Portfolio/VideoFlux/5.png" alt="FreeDoh" style="width:70%;margin-left:auto;margin-right:auto;display: block;border-radius: 4px">
-          <div class="slidetext">
-            <h5>
-              Video Flux Social Media App
-            </h5>
-             Video Flux is a student brief from Linsday Marsh's design courses (available on SkillShare). <br>
-          </div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
       </div>
+
+      <div class="row">
+        <div class="column" >
+          <img src="images/Portfolio/TheModern/1_Hero_Image.png" class="filterDiv TheModern myImages" id="myImg" alt="The Modern Luxury Hotel & Spa, NYC">
+          <img src="images/Portfolio/TheModern/2_Vertical_Logos.png" class="filterDiv TheModern myImages" id="myImg" alt="The Modern Luxury Hotel & Spa, NYC">
     
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
-        <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
-        <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+        </div>
+        <div class="column">
+          <img src="images/Portfolio/TheModern/4_ExteriorMockUps.png" class="filterDiv TheModern myImages" id="myImg" alt="The Modern Luxury Hotel & Spa, NYC"> 
+       
+        </div>
       </div>
-    <!-- END SLIDE SHOW 1-->
-      <BR>
 
+      <div class="row">
+
+        <div class="column">
+          <img src="images/Portfolio/VideoFlux/Presentation-05.png" class="filterDiv VideoFlux myImages" id="myImg" alt="Video Flux Content Sharing App">
+  
+        
+        </div>
+        <div class="column">
+          <img src="images/Portfolio/VideoFlux/Presentation-04.png" class="filterDiv VideoFlux myImages" id="myImg" alt="Video Flux Content Sharing App">
+        </div>
+        <div class="column">
+          <img src="images/Portfolio/VideoFlux/Presentation-03.png" class="filterDiv VideoFlux myImages" id="myImg" alt="Video Flux Content Sharing App">
+        </div>
+      </div>
+      <!-- end gallery-->
+
+      <!--modal-->
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
 
 
   </div>    
@@ -380,54 +245,7 @@
     
     <div class="row">
       <div class="column">
-  <!-- Trigger the Modal -->
-          <!-- Images used to open the lightbox -->
-<div class="row">
-  <div class="column">
-    <img src="images/Portfolio/TheModern/1_Hero_Image.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="images/Portfolio/TheModern/2_Vertical_Logos.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
 
-</div>
-
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="images/Portfolio/TheModern/1_Hero_Image.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="images/Portfolio/TheModern/2_Vertical_Logos.png" style="width:100%">
-    </div>
-
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="images/Portfolio/TheModern/1_Hero_Image.png" onclick="currentSlide(1)" alt="The Modern 1">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="images/Portfolio/TheModern/2_Vertical_Logos.png" onclick="currentSlide(2)" alt="The Modern 2">
-    </div>
-
-  </div>
-</div>
 
   </div>
 </div>
@@ -449,8 +267,6 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
-
-/*filter content*/
 
 function openTab(evt, tabName) {
   // Declare all variables
@@ -477,84 +293,84 @@ document.getElementById("defaultOpen").click();
 
 /* end nav bar */
 
-/* slide show*/
-
-var slideshow1 = document.getElementById("slideshow1");
-slideshow1.currentSlideIndex = 1;
-showSlides(slideshow1.currentSlideIndex, slideshow1);
-
-var slideshow2 = document.getElementById("slideshow2");
-slideshow2.currentSlideIndex = 1;
-showSlides(slideshow2.currentSlideIndex, slideshow2);
-
-function plusSlides(n, slideshow) {
-  showSlides(slideshow.currentSlideIndex += n, slideshow);
-}
-
-function currentSlide(n, slideshow) {
-  showSlides(slideshow.currentSlideIndex = n, slideshow);
-}
-
-function showSlides(n, slideshow) {
-  
-
-
-  var i;
-  var slides = slideshow.getElementsByClassName("mySlides");
-  var dots = slideshow.getElementsByClassName("dot");
-  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
-  if (n < 1) {slideshow.currentSlideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+/* filter buttons*/
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
   }
-  slides[slideshow.currentSlideIndex-1].style.display = "block";  
-  dots[slideshow.currentSlideIndex-1].className += " active";
 }
 
-/*modal images*/
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides2(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide2(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  element.className = arr1.join(" ");
 }
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+// modal images
+
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
 </script>
 
 <!-- End Document
