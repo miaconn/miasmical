@@ -385,9 +385,11 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
+  font-weight: normal;
+  font-family: 'Thasadith';
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #f7d4d1; }
+  border-bottom: 1px solid #bbbe99; }
 th:first-child,
 td:first-child {
   padding-left: 0; }
@@ -674,6 +676,15 @@ there.
   float: left;
   color: #ffffff;
   width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+.filterDivPort {
+  float: left;
+  color: #ffffff;
   line-height: 100px;
   text-align: center;
   margin: 2px;

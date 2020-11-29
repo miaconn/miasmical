@@ -49,7 +49,7 @@
 
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'about')">ABOUT</button>
+          <button class="tablinks" onclick="openTab(event, 'about')" id="defaultOpen">ABOUT</button>
         </div>
 
         <div class="tab">
@@ -123,19 +123,46 @@
 <div class="row">
   <div class="twelve columns tabcontent" id ="about" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;padding-top: 2.5%;">
     <h4>
-      PROFESSIONAL EXPERIENCE
+      ABOUT ME
     </h4>
-    <p>
-      Sr. Software Development - Data Engineering<br>
-      asdf
-    </p>
-    <h4>
-      EDUCATION
-    </h4>
-    <p>
-        Bachelors in Business Administration - Management Information Systems Concentration<br>
-        Western Washington University, 2015
-    </p>
+
+    <table class="u-full-width" style="font-weight: normal;padding-right: 2.5%;">
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>Mia Hua</td>
+        </tr>
+        <tr>
+          <td>Professional Experience</td>
+          <td>
+                <b>Sr. Software Developer</b> / <i>Data Management</i> | Symetra Financial, 1900-1979 <br>
+                <b>Software Developer</b> / <i>Data Management</i> | Symetra Financial, 1979-1990 <br>
+                <b>Systems Anaylst</b> / <i>Corporate IT</i> | Symetra Financial, 1990-2020 <br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hobbies
+          </td>
+          <td>
+            drawing<br>
+            trashy reality TV<br>
+            snuggling kitties<br>
+            video games
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Education
+          </td>
+          <td>
+              <b>Bachelor in Arts</b> | <i>Business Administration</i> | Management Information Systems<br>
+              Western Washington University, 2015
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
     
   </div>
 </div>
@@ -148,19 +175,21 @@
         PORTFOLIO
       </h4>
       
+      <p>
+        The following projects are student design briefs for fictional companies, enjoy!
+      </p>
 
+      <img src="images/SiteBranding/divider.png" style="max-width: 90%;height: auto;margin-left:auto;margin-right:auto;display: block;">
 
         <!-- Control buttons -->
         <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')"> All Projects</button>
-          <button class="btn" onclick="filterSelection('freedoh')"> FreeDoh</button>
-          <button class="btn" onclick="filterSelection('TheModern')"> The Modern</button>
-          <button class="btn" onclick="filterSelection('VideoFlux')"> Video Flux</button>
-          <button class="btn" onclick="filterSelection('travelloop')"> Travel Loop</button>
+         | <button class="btn active" onclick="filterSelection('all')"> All Projects</button> | 
+          <button class="btn" onclick="filterSelection('freedoh')"> FreeDoh</button> |
+          <button class="btn" onclick="filterSelection('TheModern')"> the Modern</button> |
+          <button class="btn" onclick="filterSelection('VideoFlux')"> Video Flux</button> |
+          <button class="btn" onclick="filterSelection('travelloop')"> Travel Loop</button>|
         </div>
-        <img src="images/SiteBranding/divider.png" style="max-width: 90%;height: auto;margin-left:auto;margin-right:auto;display: block;">
       <!--begin image grid-->
-
       <div class="row">
         <div class="column">
           <img src="images/Portfolio/FreeDoh/BWLogo-05.png" class="filterDiv freedoh myImages" id="myImg" alt="FreeDoh Gluten-Free Bakery: Printed paper mockup">
@@ -207,14 +236,14 @@
 
       <div class="row">
         <div class="column">
-          <img src ="images/Portfolio/travelloop/Facebook Ad Size - Standard.png"class ="filterdev travelloop myImages" id ="myImg" alt="Travel Loop Facebook Campaign - Stardard Ad">
+          <img src ="images/Portfolio/travelloop/Facebook Ad Size - Standard.png"class ="filterDiv travelloop myImages" id ="myImg" alt="Travel Loop Facebook Campaign - Stardard Ad">
         
         </div>
         <div class="column">
-          <img src ="images/Portfolio/travelloop/Facebook Boosted Post.png"class ="filterdev travelloop myImages" id ="myImg" alt="Travel Loop Facebook Campaign - Boosted Post">
+          <img src ="images/Portfolio/travelloop/Facebook Boosted Post.png"class ="filterDiv travelloop myImages" id ="myImg" alt="Travel Loop Facebook Campaign - Boosted Post">
         </div>
         <div class="column">
-          <img src ="images/Portfolio/travelloop/Facebook Cover Photo - Biz Page.png"class ="filterdev travelloop myImages" id ="myImg" alt="Travel Loop Facebook Campagin - Profile Cover Photo">
+          <img src ="images/Portfolio/travelloop/Facebook Cover Photo - Biz Page.png"class ="filterDiv travelloop myImages" id ="myImg" alt="Travel Loop Facebook Campagin - Profile Cover Photo">
         </div>
       </div>
       <!-- end gallery-->
@@ -264,29 +293,30 @@
       
         <div class="row">
           <div class="column">
-
+              <img src="images/DigitalArt/PavartiOuterWorlds.PNG" class="myImages" id="myImg">
+          </div>
+          <div class="column">       
+              <img src="images/DigitalArt/EllieOuterWorlds.PNG" class="myImages" id="myImg">
           </div>
           <div class="column">
-            
-          </div>
-          <div class="column">
-            
+            <img src="images/DigitalArt/PavartiOuterWorlds.PNG" class="myImages" id="myImg">
           </div>
         </div>
 
     </div>
-  </div>
-
+  </div> 
   <div class="row">
     <div class="twelve columns tabcontent" id ="blog" style="background-color:#c0c8b3;border-radius: 4px;padding-left: 2.5%;padding-top: 2.5%;padding-bottom: 2.5%;">
       <h4>
         BLOG
       </h4>
-      Coming Soon.
+      <img src="images/SiteBranding/divider.png" style="max-width: 90%;height: auto;margin-left:auto;margin-right:auto;display: block;padding-bottom: 2.5%;">
+      Coming soon.
+
     </div>
   </div>
-
-</div> <!--end container-->
+</div>
+  <!--end container-->
 
 
 
