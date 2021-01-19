@@ -440,10 +440,9 @@ hr {
 width:100%;
 height:auto;
 background-image: 
-  url(images/LogoFull_Teal.png),
   linear-gradient(160deg, #500f76 0%, #7d0f81 25%, #b153b3 100%);
-background-repeat:no-repeat, no-repeat; 
-background-size:50%, 100%;
+background-repeat:no-repeat;
+background-size:100%;
 }
 
 
