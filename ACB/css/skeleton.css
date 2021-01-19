@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -121,10 +121,10 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  /*font-size: 1.5em;  currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "despina-pro","chippewa-falls", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:  "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif,"chippewa-falls";
   color: #fff; }
 
 
@@ -154,7 +154,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; }
+  margin-top: 0; font-family: 'Raleway';font-size: 2rem;}
 
 
 /* Links
@@ -393,6 +393,61 @@ hr {
   display: table;
   clear: both; }
 
+/* responsive navbar */
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:2.5rem;
+  font-family: "chippewa-falls";
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #b153b3;
+  color: white;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: 89D2D3;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/*layered background*/
+
+.multi-bg {
+width:100%;
+height:auto;
+background-image: 
+  url(images/LogoFull_Teal.png),
+  linear-gradient(160deg, #500f76 0%, #7d0f81 25%, #b153b3 100%);
+background-repeat:no-repeat, no-repeat; 
+background-size:50%, 100%;
+}
+
+
+
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -418,3 +473,7 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+
+  
