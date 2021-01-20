@@ -449,6 +449,18 @@ background-position-y:99%;
 background-attachment: fixed;
 }
 
+.div-body {
+  background-color: rgb(255, 255, 255,.25);
+  border-radius: 5px;
+  padding-right:2.5%;
+  padding-top: 2.5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  -webkit-box-shadow: 10px 10px 0px 5px rgba(32,0,151,0.22); 
+  box-shadow: 10px 10px 0px 5px rgba(32,0,151,0.22);
+
+
+}
 
 
 
