@@ -471,7 +471,7 @@ background-attachment: fixed;
 
 .img-format {
   height:auto;
-  max-height: 100%;
+  max-width:100%;
   padding-top:2.5%;
   padding-bottom:2.5%;
   padding-left:2.5%;
