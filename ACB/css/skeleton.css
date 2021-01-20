@@ -439,11 +439,14 @@ hr {
 .multi-bg {
 width:100%;
 height:auto;
+background-color: #500f76;
 background-image: 
   url("https://miaconn.github.io/miasmical/ACB/images/FistTrioWaterMark.png"),
   linear-gradient(160deg, #500f76 0%, #7d0f81 25%, #b153b3 100%);
-background-repeat:no-repeat, no-repeat;
+background-repeat:repeat-x, no-repeat;
 background-size: AUTO, 100%;
+background-position-y:99%;
+background-attachment: fixed;
 }
 
 
