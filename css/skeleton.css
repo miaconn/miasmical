@@ -150,11 +150,11 @@ h1 { font-size: 4.0rem; line-height: 1;  letter-spacing: -.1rem; font-family: 'Y
      text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1)}
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; font-family: 'Yeseva One';color: #fff;
      text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1)}
-h3 { font-size: 3.0rem; line-height: 1.25;  letter-spacing: -.1rem; font-family: 'Josefin Sans';color: #fff;
+h3 { font-size: 3.0rem; line-height: 1.25;  letter-spacing: -.1rem; font-family:'Yeseva One';color: white;
      text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1)}
-h4 { font-size: 2.4rem; line-height: 1; letter-spacing: -.08rem; font-family: 'Josefin Sans';color: #bbd6d9;
+h4 { font-size: 2.4rem; line-height: 1; letter-spacing: .1rem; font-family: 'Yeseva One';color: white;
     text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1)}
-h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; font-family: 'Josefin Sans';color: #bbd6d9;}
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: .1rem; font-family: 'Yeseva One';color: white;}
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; font-family: 'Josefin Sans';color: #fff;}
 
 /* Larger than phablet */
@@ -170,7 +170,8 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; font-family: 'Jose
 p {
   margin-top: 0;
   font-family: 'Montserrat'; 
-  color:white;}
+  color:white;
+  text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1);}
 
 
 /* Links
@@ -188,6 +189,7 @@ a:hover {
   padding-left: 2.5%;
   padding-right: 2.5%;
   padding-bottom: 2.5%;
+;
 
 }
 
@@ -473,6 +475,7 @@ there.
   text-decoration: none;
   font-size: 17px;
   font-family: 'Josefin Sans';
+  text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1);
   
 }
 
@@ -482,16 +485,18 @@ there.
   color: d94f42;
   text-transform: lowercase;
   font-family: 'Josefin Sans';
+  text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1);
 }
 
 #navbar a.active {
   background-color: #d8ab82;
   color: #bbd6d9;
   font-family: 'Josefin Sans';
+  text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1);
 }
 
 .content {
-  padding: 16px;
+  padding: 10px;
 }
 
 .sticky {
