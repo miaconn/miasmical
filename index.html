@@ -16,8 +16,11 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Montserrat:wght@100;400&family=Yeseva+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Montserrat:wght@200;500&family=Yeseva+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/nkk5xbl.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -34,28 +37,119 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
-  <div class="header">
-      <img src="images/SiteHeader.png" class="imgtransform" style="width:60%;"> 
+  <div class="row">
+    <div class="twelve columns">
+      <div class="header">
+          <img src="images/SiteHeader.png" class="imgtransform"> 
+      </div>
+
+
+      <div id="navbar" class="tab">
+            <button class="tablinks" onclick="siteNav(event, 'home')" id="defaultOpen"><i class="fa fa-home"></i> home</button>
+            <button class="tablinks" onclick="siteNav(event, 'portfolio')"><i class="fa fa-folder"></i> portfolio</button>
+            <button class="tablinks" onclick="siteNav(event, 'contact')"><i class="fa fa-envelope"></i> contact</button>
+            <button class="tablinks" onclick="siteNav(event, 'about')"><i class="fa fa-photo"></i> about</button>
+
+
+            <a href="#" class="google" target="_blank"><i class="fa fa-google"></i></a>
+            <a href="#" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
   </div>
 
-  <div id="navbar">
-    <a href="#home">home</a>
-    <a href="#portfolio)">portfolio</a>
-    <a href="#contact">contact</a>
-  </div>
-
-    <div class="row content" id="home">
+  <!-- ROW ONE HOME -->
+    <div class="row content tabcontent" id="home">
       <div class="twelve columns divbody">
 
         <h4>
           artistic eye + business acumen
         </h4>
           <p>
-              As a former software developer with a bachelors degree in Management Information Systems, I am uniquely qualified to assist with your design projects. I will work with you to get an understanding
-              of your business needs and goals to create a design that will help you get there. 
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus fringilla porta. Vivamus facilisis placerat arcu, vitae blandit neque vestibulum ut. Pellentesque aliquam vitae velit a ornare. Quisque ut felis eu lectus scelerisque iaculis. Cras tristique lacus sed eros tempus, a feugiat sapien porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin tellus tellus, laoreet non nulla non, imperdiet interdum sapien. Sed non pharetra justo. Quisque eu ipsum finibus, efficitur lectus non, lobortis dui. Quisque convallis lacinia dolor non vehicula. Donec nec felis sit amet sapien molestie faucibus. Donec cursus tempor gravida. Nunc ut tincidunt enim. Etiam eu luctus lorem. Pellentesque et maximus tellus. Nam purus ante, sodales eget rhoncus vel, porta id ipsum.
           </p>
       </div>
     </div>
+
+    <!-- END ROW ONE HOME -->
+
+ 
+
+    <!-- ROW TWO PORTFOLIO -->
+    <div class="row content tabcontent" id="portfolio">
+      <div class="twelve columns divbody">
+
+        <h4>
+          portfolio
+        </h4>
+          <p>
+         
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus fringilla porta. Vivamus facilisis placerat arcu, vitae blandit neque vestibulum ut. Pellentesque aliquam vitae velit a ornare. Quisque ut felis eu lectus scelerisque iaculis. Cras tristique lacus sed eros tempus, a feugiat sapien porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin tellus tellus, laoreet non nulla non, imperdiet interdum sapien. Sed non pharetra justo. Quisque eu ipsum finibus, efficitur lectus non, lobortis dui. Quisque convallis lacinia dolor non vehicula. Donec nec felis sit amet sapien molestie faucibus. Donec cursus tempor gravida. Nunc ut tincidunt enim. Etiam eu luctus lorem. Pellentesque et maximus tellus. Nam purus ante, sodales eget rhoncus vel, porta id ipsum.
+          </p>
+      </div>
+    </div>
+    <!-- END ROW TWO PORTFOLIO -->
+
+    <!-- ROW THREE CONTACT -->
+    <div class="row content tabcontent" id="contact">
+      <div class="twelve columns divbody">
+
+        <h4>
+          contact
+        </h4>
+          <p>
+            
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus fringilla porta. Vivamus facilisis placerat arcu, vitae blandit neque vestibulum ut. Pellentesque aliquam vitae velit a ornare. Quisque ut felis eu lectus scelerisque iaculis. Cras tristique lacus sed eros tempus, a feugiat sapien porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin tellus tellus, laoreet non nulla non, imperdiet interdum sapien. Sed non pharetra justo. Quisque eu ipsum finibus, efficitur lectus non, lobortis dui. Quisque convallis lacinia dolor non vehicula. Donec nec felis sit amet sapien molestie faucibus. Donec cursus tempor gravida. Nunc ut tincidunt enim. Etiam eu luctus lorem. Pellentesque et maximus tellus. Nam purus ante, sodales eget rhoncus vel, porta id ipsum.
+          </p>
+      </div>
+    </div>
+    <!-- END ROW THREE CONTACT -->
+
+
+    <!-- ROW FOUR ABOUT -->
+    <div class="row content tabcontent" id="about">
+      <div class="twelve columns divbody">
+
+        <h4>
+          about
+        </h4>
+          <p>
+            
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus fringilla porta. Vivamus facilisis placerat arcu, vitae blandit neque vestibulum ut. Pellentesque aliquam vitae velit a ornare. Quisque ut felis eu lectus scelerisque iaculis. Cras tristique lacus sed eros tempus, a feugiat sapien porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin tellus tellus, laoreet non nulla non, imperdiet interdum sapien. Sed non pharetra justo. Quisque eu ipsum finibus, efficitur lectus non, lobortis dui. Quisque convallis lacinia dolor non vehicula. Donec nec felis sit amet sapien molestie faucibus. Donec cursus tempor gravida. Nunc ut tincidunt enim. Etiam eu luctus lorem. Pellentesque et maximus tellus. Nam purus ante, sodales eget rhoncus vel, porta id ipsum.
+          </p>
+      </div>
+    </div>
+    <!-- END ROW FOUR ABOUT -->
+
+    <img src="images/cloudBorder.png" class="divider" >
+
+
+    <footer class="footer center">
+    
+      <div class="row center">
+
+        <div class="five columns" style="color:#bbd6d9">
+.
+        </div>
+
+        <div class="one column center">
+          <a href="#" class="google" target="_blank"><i class="fa fa-google" class="center"></i></a>
+        </div>
+        <div class="one column center">
+          <a href="#" class="linkedin" target="_blank"><i class="fa fa-linkedin" class="center"></i></a>
+        </div>
+        <div class="one column center">
+          <a href="#" class="instagram" target="_blank"><i class="fa fa-instagram" class="center"></i></a>
+        </div>
+        <div class="four columns">
+
+        </div>
+        
+      </div>
+
+    
+    </footer>
 
   </div>
 
@@ -77,5 +171,31 @@
       navbar.classList.remove("sticky");
     }
   }
+
+  /**/
+
+  function siteNav(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
   </script>
   
