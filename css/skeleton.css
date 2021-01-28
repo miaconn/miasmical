@@ -508,3 +508,12 @@ there.
   padding-top: 60px;
 }
 
+/*
+dynamic images
+*/
+
+.imgtransform {
+  max-width: 100%;
+  height:auto;
+}
+
