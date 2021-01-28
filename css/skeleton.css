@@ -361,11 +361,9 @@ form {
 
 .header {
   padding: 30px;
-  text-align: center;
   overflow: hidden;
   background-color: #d96804;
-  -webkit-box-shadow: 1px 1px 0px 2px rgba(189,169,168,0.1); 
-  box-shadow: 1px 1px 0px 2px rgba(189,169,168,0.1);
+  width:inherit;
 }
 
 #navbar {
@@ -374,10 +372,6 @@ form {
   background-color: #f28705;
   padding: 14px 16px;
 }
-
-
-
-
 
 .content {
   padding: 10px;
@@ -426,12 +420,6 @@ page dividers/borders
   padding-bottom: 2.5%;
 }
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: none;
-  background-color: #f28705;
-}
 
 /* Style the tab content */
 .tabcontent {
