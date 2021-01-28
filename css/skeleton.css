@@ -183,7 +183,6 @@ a {
   text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1);}
 a:hover {
   color: #bbd6d9;
-  background-color: #d8ab82;
   text-decoration: none;
   font-size: 21px;
   font-family: 'Josefin Sans';
@@ -444,12 +443,18 @@ page dividers/borders
 font-family: 'Montserrat';
 font-size:12px;
 text-align:right;
+padding-bottom: .5%;
 
 }
 
 .contactTable {
 font-weight: normal;
 font-size: 20px;
+
+}
+
+.navPadding {
+  padding: 1% 1% 1% 1%;
 
 }
 

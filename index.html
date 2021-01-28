@@ -37,30 +37,35 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
 
+    <div class="header">
+      <img src="images/SiteHeader.png" class="imgtransform"> 
+    </div>
+
   <div class="row">
 
-    <div class="twelve columns">
-
-      <div class="header">
-          <img src="images/SiteHeader.png" class="imgtransform"> 
-
-      </div>
+    <div class="twelve columns ">
 
       <div id="navbar" class="tab navbar">
             
-            <a href="#" onclick="siteNav(event, 'home')" id="defaultOpen"> home </a> &nbsp;
-            <a href="#" onclick="siteNav(event, 'portfolio')" > portfolio </a> &nbsp;
-            <a href="#" onclick="siteNav(event, 'contact')" > contact </a> &nbsp;
-            <a href="#" onclick="siteNav(event, 'about')" > about </a> &nbsp;
+            <a href="#" onclick="siteNav(event, 'home')" id="defaultOpen" class="navPadding"> <i class="fa fa-home"></i> &nbsp;home </a> 
+            <a href="#" onclick="siteNav(event, 'portfolio')" class="navPadding"> <i class="fa fa-folder"></i>&nbsp; portfolio </a> 
+            <a href="#" onclick="siteNav(event, 'contact')" class="navPadding"><i class="fa fa-envelope"></i>&nbsp; contact </a>
+            <a href="#" onclick="siteNav(event, 'about')" class="navPadding"><i class="fa fa-photo"></i>&nbsp; about </a> 
+        
+            <a href="#" class="google navPadding" target="_blank"><i class="fa fa-google" ></i></a> 
+            <a href="#" class="linkedin navPadding" target="_blank"><i class="fa fa-linkedin" ></i></a>
+            <a href="#" class="instagram navPadding" target="_blank"><i class="fa fa-instagram"  ></i></a>
+
             <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
               <i class="fa fa-bars"></i>
             </a>
-            <!--<button class="tablinks" onclick="siteNav(event, 'home')" id="defaultOpen"><i class="fa fa-home"></i> home</button>
-            <button class="tablinks" onclick="siteNav(event, 'portfolio')"><i class="fa fa-folder"></i> portfolio</button>
-            <button class="tablinks" onclick="siteNav(event, 'contact')"><i class="fa fa-envelope"></i> contact</button>
-            <button class="tablinks" onclick="siteNav(event, 'about')"><i class="fa fa-photo"></i> about</button>-->          
+       
       </div>
       
+    </div>
+
+    <div class="four columns">
+
     </div>
 
   </div>
@@ -231,27 +236,25 @@
     
       <div class="row center">
 
-        <div class="five columns">
-          &nbsp;
-        </div>
 
-        <div class="one column center">
-          <a href="#" class="google" target="_blank"><i class="fa fa-google" class="center"></i></a>
-        </div>
 
-        <div class="one column center">
-          <a href="#" class="linkedin" target="_blank"><i class="fa fa-linkedin" class="center"></i></a>
-        </div>
-
-        <div class="one column center">
-          <a href="#" class="instagram" target="_blank"><i class="fa fa-instagram" class="center"></i></a>
-        </div>
-        &nbsp;
         <div class="four columns">
-
+          <a href="#" class="google" target="_blank"><i class="fa fa-google" class="center"></i></a> / find me on google businesses
         </div>
+
+        <div class="four columns">
+          <a href="#" class="linkedin" target="_blank"><i class="fa fa-linkedin" class="center"></i></a> / find me on linkedin
+        </div>
+
+        <div class="four columns">
+          <a href="#" class="instagram" target="_blank"><i class="fa fa-instagram" class="center"></i></a> / find me on instagram
+        </div>
+
+
         
-      </div>
+      </div> <br>
+
+      copyright disclaimer placeholder
 
     </footer>
 
@@ -305,11 +308,11 @@
 
   /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function responsiveNav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "navbar";
   }
 }
 
