@@ -50,8 +50,30 @@
   </div>
 
 
-  <div class="row">
+  <div class="row" id="navbar">
 
+    <div class= "two columns navbar" >
+      <a href="#" onclick="siteNav(event, 'home')" id="defaultOpen" class="navPadding"> <i class="fa fa-home"></i> &nbsp;home </a> 
+    </div>
+    <div class= "two columns navbar" >
+      <a href="#" onclick="siteNav(event, 'portfolio')" class="navPadding"> <i class="fa fa-folder"></i>&nbsp; portfolio </a> 
+    </div>
+    <div class= "two columns navbar" >
+      <a href="#" onclick="siteNav(event, 'contact')" class="navPadding"><i class="fa fa-address-card"></i>&nbsp; contact </a>
+    </div>
+    <div class= "two columns navbar" >
+      <a href="#" onclick="siteNav(event, 'about')" class="navPadding"><i class="fa fa-question-circle"></i>&nbsp; about </a> 
+    </div>
+    <div class= "two columns navbar" >
+      
+    </div>
+    <div class= "two columns navbar" style="float:right;">
+      <a href="#" class="google navPadding" target="_blank"><i class="fa fa-google" ></i></a> &nbsp; 
+      <a href="#" class="linkedin navPadding" target="_blank"><i class="fa fa-linkedin" ></i></a>&nbsp; &nbsp; 
+      <a href="#" class="instagram navPadding" target="_blank"><i class="fa fa-instagram"  ></i></a>&nbsp; 
+    </div>
+
+    <!--
     <div class="twelve columns navbar" id="navbar">
 
             
@@ -63,10 +85,10 @@
             <a href="#" class="google navPadding" target="_blank"><i class="fa fa-google" ></i></a> 
             <a href="#" class="linkedin navPadding" target="_blank"><i class="fa fa-linkedin" ></i></a>
             <a href="#" class="instagram navPadding" target="_blank"><i class="fa fa-instagram"  ></i></a>
-    </div>
+    </div>-->
 
   </div>
-
+  <br>
 
   <a href="#" class="openbtn" onclick="siteNav(event, 'home')" id="openbutton">▲</a>
 
@@ -311,17 +333,6 @@ function responsiveNav() {
   }
 }
 
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-}
 
 /* sticky nav button */ 
 

@@ -110,7 +110,7 @@ body {
 
 .gradientbg {
   background-color: #d96804;
-  background-image: linear-gradient(45deg, #bbd6d9 19%, #cbdee0 50%, #ffffff 100%);
+  background-image: linear-gradient(45deg, #bbd6d9 19%, #cbdee0 50%);
   background-size:cover;
   height:100%;
   background-position: center;
@@ -443,29 +443,7 @@ font-size: 20px;
   padding: 1% 1% 1% 1%;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navBar (.icon) */
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}
 
-/* The "responsive" class is added to the navBar with JavaScript when the user clicks on the icon. This class makes the navBar look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 
 
 /* The button used to open the sidebar */
