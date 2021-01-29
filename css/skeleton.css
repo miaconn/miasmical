@@ -363,9 +363,7 @@ form {
   padding: 30px;
   overflow: hidden;
   background-color: #d96804;
-  background-image: url("https://miaconn.github.io/miasmical/images/siteHeader.png");
-  background-repeat: none;
-  background-position: center;
+
 }
 
 #navbar {
@@ -537,4 +535,12 @@ font-size: 20px;
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+
+.formatSVG {
+  max-width: 100%;
+  height:auto;
+  width:30%;
+  padding-top: 2.5%;
+  padding-bottom:2.5%;
 }
