@@ -51,7 +51,6 @@
 
 
   <div class="row" id="navbar">
-
     <div class= "two columns navbar" >
       <a href="#" onclick="siteNav(event, 'home')" id="defaultOpen" class="navPadding"> <i class="fa fa-home"></i> &nbsp;home </a> 
     </div>
@@ -64,28 +63,12 @@
     <div class= "two columns navbar" >
       <a href="#" onclick="siteNav(event, 'about')" class="navPadding"><i class="fa fa-question-circle"></i>&nbsp; about </a> 
     </div>
-    <div class= "two columns navbar" >
-      
-    </div>
-    <div class= "two columns navbar" style="float:right;">
-      <a href="#" class="google navPadding" target="_blank"><i class="fa fa-google" ></i></a> &nbsp; 
-      <a href="#" class="linkedin navPadding" target="_blank"><i class="fa fa-linkedin" ></i></a>&nbsp; &nbsp; 
+    <div class= "four columns navbar" style="float:right;">
+      <a href="#" class="google navPadding" target="_blank"><i class="fa fa-google" ></i></a>&nbsp;
+      <a href="#" class="linkedin navPadding" target="_blank"><i class="fa fa-linkedin" ></i></a>&nbsp;
       <a href="#" class="instagram navPadding" target="_blank"><i class="fa fa-instagram"  ></i></a>&nbsp; 
+      <a href="#" class="behance navPadding" target="_blank"><i class="fa fa-behance"  ></i></a>&nbsp; 
     </div>
-
-    <!--
-    <div class="twelve columns navbar" id="navbar">
-
-            
-            <a href="#" onclick="siteNav(event, 'home')" id="defaultOpen" class="navPadding"> <i class="fa fa-home"></i> &nbsp;home </a> 
-            <a href="#" onclick="siteNav(event, 'portfolio')" class="navPadding"> <i class="fa fa-folder"></i>&nbsp; portfolio </a> 
-            <a href="#" onclick="siteNav(event, 'contact')" class="navPadding"><i class="fa fa-address-card"></i>&nbsp; contact </a>
-            <a href="#" onclick="siteNav(event, 'about')" class="navPadding"><i class="fa fa-question-circle"></i>&nbsp; about </a> 
-        
-            <a href="#" class="google navPadding" target="_blank"><i class="fa fa-google" ></i></a> 
-            <a href="#" class="linkedin navPadding" target="_blank"><i class="fa fa-linkedin" ></i></a>
-            <a href="#" class="instagram navPadding" target="_blank"><i class="fa fa-instagram"  ></i></a>
-    </div>-->
 
   </div>
   <br>
@@ -145,20 +128,116 @@
 
     <!-- ROW TWO PORTFOLIO -->
     <div class="row content tabcontent" id="portfolio">
-
-      <div class="twelve columns divbody">
-
-        <h4>
-          portfolio
-        </h4>
-
-        <p>     
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus fringilla porta. Vivamus facilisis placerat arcu, vitae blandit neque vestibulum ut. Pellentesque aliquam vitae velit a ornare. Quisque ut felis eu lectus scelerisque iaculis. Cras tristique lacus sed eros tempus, a feugiat sapien porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin tellus tellus, laoreet non nulla non, imperdiet interdum sapien. Sed non pharetra justo. Quisque eu ipsum finibus, efficitur lectus non, lobortis dui. Quisque convallis lacinia dolor non vehicula. Donec nec felis sit amet sapien molestie faucibus. Donec cursus tempor gravida. Nunc ut tincidunt enim. Etiam eu luctus lorem. Pellentesque et maximus tellus. Nam purus ante, sodales eget rhoncus vel, porta id ipsum.
-        </p>
-
+        <div class="twelve columns divbody">
+            <h4>portfolio</h4>
+      </div>
+      <div class="two columns divbody">
+          <img src="images/portfolio/FreeDoh/BWLogo-01.png" onclick="openModal();currentSlide(1)" class="hover-shadow thumbnail">
+      </div>
+      <div class="two columns divbody">
+        <img src="images/portfolio/FreeDoh/BWLogo-02.png" onclick="openModal();currentSlide(2)" class="hover-shadow thumbnail">
+      </div>
+      <div class="two columns divbody">
+        <img src="images/portfolio/FreeDoh/BWLogo-03.png" onclick="openModal();currentSlide(3)" class="hover-shadow thumbnail">
+      </div>
+      <div class="two columns divbody">
+        <img src="images/portfolio/FreeDoh/BWLogo-03.png" onclick="openModal();currentSlide(4)" class="hover-shadow thumbnail">
+      </div>
+      <div class="two columns divbody">
+        <img src="images/portfolio/FreeDoh/BWLogo-04.png" onclick="openModal();currentSlide(2)" class="hover-shadow thumbnail">
+      </div>
+      <div class="two columns divbody">
+        <img src="images/portfolio/FreeDoh/BWLogo-05.png" onclick="openModal();currentSlide(2)" class="hover-shadow thumbnail">
+      </div>      
+      <div class="two columns divbody">
+        <img src="images/portfolio/FreeDoh/BWLogo-06.png" onclick="openModal();currentSlide(2)" class="hover-shadow thumbnail">
+      </div>
+      <div class="two columns divbody">
+        <img src="images/portfolio/TheModern/1_Hero_Image.png" onclick="openModal();currentSlide(2)" class="hover-shadow thumbnail">
       </div>
 
     </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 </div>
+          <img src="images/portfolio/FreeDoh/BWLogo-01.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 </div>
+          <img src="images/portfolio/FreeDoh/BWLogo-02.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 </div>
+          <img src="images/portfolio/FreeDoh/BWLogo-03.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/portfolio/FreeDoh/BWLogo-04.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/portfolio/FreeDoh/BWLogo-05.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/portfolio/FreeDoh/BWLogo-05.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/portfolio/TheModern/1_Hero_Image.png" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo thumbnail" src="images/portfolio/FreeDoh/BWLogo-01.png" onclick="currentSlide(1)" alt="FreeDoh - Logo in Black & White">
+        </div>
+
+        <div class="column">
+          <img class="demo thumbnail" src="images/portfolio/FreeDoh/BWLogo-02.png" onclick="currentSlide(2)" alt="FreeDoh exterior sign mockup">
+        </div>
+
+        <div class="column">
+          <img class="demo thumbnail" src="images/portfolio/FreeDoh/BWLogo-03.png" onclick="currentSlide(3)" alt="Freedoh - Logo in color">
+        </div>
+
+        <div class="column">
+          <img class="demo thumbnail" src="images/portfolio/FreeDoh/BWLogo-04.png" onclick="currentSlide(4)" alt="FreeDoh - Details">
+        </div>
+
+        <div class="column">
+          <img class="demo thumbnail" src="images/portfolio/FreeDoh/BWLogo-05.png" onclick="currentSlide(5)" alt="FreeDoh - printed paper mockup">
+        </div>
+
+        <div class="column">
+          <img class="demo thumbnail" src="images/portfolio/TheModern/1_Hero_Image.png" onclick="currentSlide(6)" alt="The Modern - hero image">
+        </div>
+
+      </div>
+    </div>
+
+
+
+
     <!-- END ROW TWO PORTFOLIO -->
 
     <!-- ROW THREE CONTACT -->
@@ -168,44 +247,11 @@
 
         <h4>
           contact
-        </h4> <br>   
+        </h4> 
 
-        <!--contact table-->
-        <table class="u-full-width contactTable">
-          <thread>
-            <tr>
-              <th style="font-weight:normal;">
-                  email
-              </th>
-              <th style="font-weight:normal;">
-                instagram
-            </th>
-              <th style="font-weight:normal;">
-                linkedIn
-            </th>
-            <th style="font-weight:normal;">
-              google
-          </th>
-            </tr>
-          </thread>
-          <tbody>
-            <tr >
-              <td>
-                <i class="fa fa-envelope-square" target="_blank" class="center"></i>
-              </td>
-              <td>
-                <a href="#" class="instagram" target="_blank"><i class="fa fa-instagram" class="center"></i>
-              </td>
-              <td>
-                <a href="#" class="linkedin" target="_blank"><i class="fa fa-linkedin" class="center"></i>
-              </td>
-              <td>
-                <a href="#" class="google" target="_blank"><i class="fa fa-google" class="center"></i>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <!--end table-->
+      <p>
+        Email me directly at <span style="color:#f28705;font-weight: bold;">miasmical.create@gmail.com</span> 
+      </p>
 
       </div>
 
@@ -255,16 +301,20 @@
 
 
 
-        <div class="four columns">
-          <a href="#" class="google" target="_blank"><i class="fa fa-google" class="center"></i></a> / find me on google businesses
+        <div class="three columns">
+          <a href="#" class="google" target="_blank"><i class="fa fa-google" class="center"></i></a> / Google Business page
         </div>
 
-        <div class="four columns">
-          <a href="#" class="linkedin" target="_blank"><i class="fa fa-linkedin" class="center"></i></a> / find me on linkedin
+        <div class="three columns">
+          <a href="#" class="linkedin" target="_blank"><i class="fa fa-linkedin" class="center"></i></a> / LinkedIn Profile
         </div>
 
-        <div class="four columns">
-          <a href="#" class="instagram" target="_blank"><i class="fa fa-instagram" class="center"></i></a> / find me on instagram
+        <div class="three columns">
+          <a href="#" class="instagram" target="_blank"><i class="fa fa-instagram" class="center"></i></a> / Instagram
+        </div>
+
+        <div class="three columns">
+          <a href="#" class="behance" target="_blank"><i class="fa fa-behance" class="center"></i></a> / Behance
         </div>
 
 
@@ -282,20 +332,6 @@
 </html>
 
 <script>
-
-  /* STICKY NAV BAR 
-  window.onscroll = function() {stickyNav()};
-  
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-  
-  function stickyNav() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }*/
 
   /* TAB FILTERING*/
 
@@ -351,6 +387,47 @@ function stickyButton() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
   </script>
