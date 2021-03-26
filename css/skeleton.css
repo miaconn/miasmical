@@ -589,7 +589,7 @@ img.hover-shadow {
 }
 
 .thumbnail {
-  width:150px;
+  max-width: 150px;
   height:auto;
   opacity: .9;
 
