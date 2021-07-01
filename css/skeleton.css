@@ -126,12 +126,14 @@ h1 {  font-size: 4.0rem;
       letter-spacing: .4rem; 
       font-family: 'bely-display';
       color:#F2F2BE;
+      text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1);
     }
 h2 {  font-size: 3.5rem; 
       line-height: 1.25; 
       font-family: 'magnesium-mvb';
       letter-spacing: .2rem;
       text-transform: uppercase;
+      text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1)
     }
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -273,7 +275,7 @@ form {
 }
 
 .imgtransform {
-  max-width: 90%;
+  max-width: 100%;
   height:auto;
 }
 
@@ -301,7 +303,7 @@ padding-bottom: .5%;
 
 
 .formatSVG {
-  max-width: 100%;
+  max-width: 30%;
   height:auto;
   padding:2%;
 }
@@ -334,6 +336,7 @@ padding-bottom: .5%;
   font-size: 2.0rem;
   letter-spacing: .2rem;
   font-family: 'magnesium-mvb';
+  text-shadow: 1px 1px 0px rgba(204, 198, 156, 0.1);
 }
 
 /* Change the color of links on hover */
@@ -341,6 +344,7 @@ padding-bottom: .5%;
   background-color: #CC3910;
   color: #CCC69C;
   font-family: 'magnesium-mvb';
+  text-shadow: 1px 1px 0px rgba(204, 198, 156, 0.1);
 }
 
 /* Add a green background color to the active link */
@@ -348,6 +352,7 @@ padding-bottom: .5%;
   background-color: #CC3910;
   color: #CCC69C;
   font-family: 'magnesium-mvb';
+  text-shadow: 1px 1px 0px rgba(204, 198, 156, 0.1);
 }
 
 /* Hide the link that should open and close the navbar on small screens */
