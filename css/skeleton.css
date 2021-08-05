@@ -430,7 +430,7 @@ padding-bottom: .5%;
 }
 
 .imgResize {
-  max-width: 100%;
+  max-width: 90%;
   height:auto;
   opacity: .5;
 }
