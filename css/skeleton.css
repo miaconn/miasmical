@@ -108,7 +108,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Calibri', bely-display, sans-serif, magnesium-mvb, sans-serif;
+  font-family: 'Calibri', 'bely-display', sans-serif, 'magnesium-mvb', sans-serif;
   color: #333029;}
 
   
@@ -430,7 +430,7 @@ padding-bottom: .5%;
 }
 
 .imgResize {
-  max-width: 5%;
+  max-width: 100%;
   height:auto;
   opacity: .5;
 }
