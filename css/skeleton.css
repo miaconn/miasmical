@@ -125,7 +125,7 @@ h1 {  font-size: 4.0rem;
       line-height: 1;  
       letter-spacing: .4rem; 
       font-family: 'bely-display';
-      color:#F2F2BE;
+      color:#CCC69C;
       text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1);
     }
 h2 {  font-size: 3.5rem; 
@@ -135,6 +135,13 @@ h2 {  font-size: 3.5rem;
       text-transform: uppercase;
       text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1)
     }
+  h3 {  font-size: 2.5rem; 
+    line-height: 1.25; 
+    font-family: 'magnesium-mvb';
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1)
+  }
 /* Larger than phablet */
 @media (min-width: 550px) {
   h1 { font-size: 5.0rem; }
@@ -145,23 +152,20 @@ p {
   margin-top: 0;
   font-family: 'calibri'; 
   color:#333029;
-  font-size: 1.0em;
+  font-size: 1.2em;
+  text-align:justify;
   }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: white;
+  color: #CCC69C;
   text-decoration: none;
-  font-size: 21px;
-  font-family: 'Josefin Sans';
-  text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1);}
+  font-family: 'calibri';}
 a:hover {
-  color: #bbd6d9;
+  color: #CC3910;
   text-decoration: none;
-  font-size: 21px;
-  font-family: 'Josefin Sans';
-  text-shadow: 2px 2px 0px rgba(48, 59, 115, 0.1);
+  font-family: 'calibri';
   }
 
 /* Div styles
@@ -214,7 +218,10 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid #F2F2BE; 
+  font-family: 'calibri'; 
+  color:#333029;
+  font-size: 1.2em;}
 th:first-child,
 td:first-child {
   padding-left: 0; }
@@ -281,8 +288,7 @@ form {
 
 .center {
 display:block;
-margin-left:auto;
-margin-right:auto;
+margin:auto;
 }
 
 .centerText {
@@ -303,10 +309,12 @@ padding-bottom: .5%;
 
 
 .formatSVG {
-  max-width: 30%;
+  max-width: 70%;
   height:auto;
   padding:2%;
+
 }
+
 
 .content {
   padding-left: 2%;
@@ -383,3 +391,71 @@ padding-bottom: .5%;
   }
 }
 
+/* responsive image grid */ 
+
+.gridRow {
+  display: flex;
+  flex-wrap: wrap;
+  padding:1%;
+}
+
+.gridColumn {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gridColumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 10%;
+  height:auto;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gridColumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gridColumn {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.imgResize {
+  max-width: 100%;
+  height:auto;
+  opacity: .5;
+}
+
+.imgResize:hover {
+  opacity:1.0;
+}
+
+.caption {
+  font-style: italic;
+  font-size: 1.3rem;
+  
+}
+
+/* parallax */
+
+.parallax {
+  /* The image used */
+  background-image: url('/images/parallax_demo/img1.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
