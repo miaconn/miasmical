@@ -143,6 +143,12 @@ h2 {  font-size: 3.5rem;
     font-family: 'magnesium-mvb';
     letter-spacing: .2rem;
     text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1)}
+  h4 {  font-size: 1.5rem; 
+    line-height: 1.25; 
+    font-family: 'magnesium-mvb';
+    letter-spacing: .2rem;
+    text-transform: uppercase;
     text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1)
   }
 /* Larger than phablet */
@@ -171,6 +177,10 @@ a:hover {
   text-decoration: none;
   font-family: 'calibri';
   }
+
+h4:hover {
+  color: #CC3910;
+}
 
 /* Div styles
 ----------------------------------------------------*/
