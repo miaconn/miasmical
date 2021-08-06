@@ -125,14 +125,16 @@ h1 {  font-size: 4.0rem;
       line-height: 1;  
       letter-spacing: .4rem; 
       font-family: 'bely-display';
-      color:#CCC69C;
+      color:#F2F2BE;
       text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1);
     }
 h2 {  font-size: 3.5rem; 
       line-height: 1.25; 
       font-family: 'bely-display';
       letter-spacing: .2rem;
-      background-color: #333029;
+      border-radius: 15px 50px 30px;
+      background: rgba(204, 57, 16, 0.9); /* Green background with 30% opacity */
+
       padding:1%;
       text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1)
     }
