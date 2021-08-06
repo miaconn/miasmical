@@ -163,6 +163,8 @@ p {
   color:#333029;
   font-size: 1.2em;
   text-align:justify;
+  padding-left: 2%;
+  padding-right:2%
   }
 
   /*force upload*/
