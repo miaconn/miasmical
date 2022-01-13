@@ -7,12 +7,31 @@
 * 12/29/2014
 */
 
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
   width: 100%;
-  max-width: 1800px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -93,106 +112,207 @@
 
 }
 
+/* Color Theme Swatches in Hex */
+.Graphic-Design-1-hex { color: #261D1F; }
+.Graphic-Design-2-hex { color: #D9D6D2; }
+.Graphic-Design-3-hex { color: #594A38; }
+.Graphic-Design-4-hex { color: #BF8563; }
+.Graphic-Design-5-hex { color: #A66851; }
+
+/* Color Theme Swatches in RGBA */
+.Graphic-Design-1-rgba { color: rgba(38, 29, 31, 1); }
+.Graphic-Design-2-rgba { color: rgba(216, 214, 210, 1); }
+.Graphic-Design-3-rgba { color: rgba(89, 74, 56, 1); }
+.Graphic-Design-4-rgba { color: rgba(191, 133, 99, 1); }
+.Graphic-Design-5-rgba { color: rgba(165, 103, 81, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Graphic-Design-1-hsla { color: hsla(348, 12, 13, 1); }
+.Graphic-Design-2-hsla { color: hsla(39, 7, 83, 1); }
+.Graphic-Design-3-hsla { color: hsla(33, 22, 28, 1); }
+.Graphic-Design-4-hsla { color: hsla(22, 41, 57, 1); }
+.Graphic-Design-5-hsla { color: hsla(16, 34, 48, 1); }
+
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; 
-  height:100%;}
+  font-size: 62.5%; }
 body {
-  background-color:#8FA78F ;
-  height:100%;
-  margin:0;
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: 'Calibri', 'bely-display', sans-serif, 'magnesium-mvb', sans-serif;
-  color: #333029;}
+  font-size: 2.0em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  letter-spacing:.1%;
+  line-height: 125%;
+  font-weight: normal;
+  font-family:"Yanone Kaffeesatz","Garamond","Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #261D1F; 
+  background-color: #D9D6D2;}
 
-  
+
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 300; 
-  color:#CCC69C;
-  }
+  font-weight: 300; }
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: .05rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:#261D1F;}
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: .05rem;     font-family: 'Yanone Kaffeesatz', sans-serif;
+  color:#261D1F;}
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem;     font-family: 'Yanone Kaffeesatz', sans-serif;
+  color:#261D1F;}
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem;     font-family: 'Garamond';
+  color:#261D1F;}
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem;     font-family: 'Yanone Kaffeesatz', sans-serif;
+  color:#261D1F;}
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0;     font-family: 'Yanone Kaffeesatz', sans-serif;
+  color:#261D1F;}
 
-h1 {  font-size: 4.0rem; 
-      line-height: 1;  
-      letter-spacing: .4rem; 
-      font-family: 'bely-display';
-      color:#F2F2BE;
-      text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1);
-    }
-h2 {  font-size: 3.5rem; 
-      line-height: 1.25; 
-      font-family: 'bely-display';
-      letter-spacing: .2rem;
-      border-radius: 15px;
-      background: rgba(204, 57, 16, 0.9); /* Green background with 30% opacity */
-
-      padding:1%;
-      text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1);
-      -webkit-box-shadow: 5px 6px 7px -3px rgba(51,48,41,0.44); 
-box-shadow: 5px 6px 7px -3px rgba(51,48,41,0.44);
-    }
-  h3 {  font-size: 2.0rem; 
-    line-height: 1.25; 
-    font-family: 'magnesium-mvb';
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1)}
-  h4 {  font-size: 1.5rem; 
-    line-height: 1.25; 
-    font-family: 'magnesium-mvb';
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 0px rgba(51, 48, 41, 0.1)
-  }
 /* Larger than phablet */
 @media (min-width: 550px) {
   h1 { font-size: 5.0rem; }
-  h2 { font-size: 3.5rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
 }
 
 p {
-  margin-top: 0;
-  font-family: 'calibri'; 
-  color:#333029;
-  font-size: 1.2em;
-  text-align:justify;
-  padding-left: 2%;
-  padding-right:2%
-  }
+  margin-top: 0; }
 
-  /*force upload*/
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #CCC69C;
-  text-decoration: none;
-  font-family: 'calibri';}
+  color: #1EAEDB; }
 a:hover {
-  color: #CC3910;
+  color: #0FA0CE; }
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
   text-decoration: none;
-  font-family: 'calibri';
-  }
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
 
-h4:hover {
-  color: #CC3910;
-}
 
-/* Div styles
-----------------------------------------------------*/
-.divbody {
-  padding-top:2.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  }
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
 
 
 /* Lists
@@ -222,7 +342,7 @@ code {
   font-size: 90%;
   white-space: nowrap;
   background: #F1F1F1;
-  border: none;
+  border: 1px solid #E1E1E1;
   border-radius: 4px; }
 pre > code {
   display: block;
@@ -236,16 +356,14 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #F2F2BE; 
-  font-family: 'calibri'; 
-  color:#333029;
-  font-size: 1.2em;}
+  border-bottom: 1px solid #E1E1E1; }
 th:first-child,
 td:first-child {
   padding-left: 0; }
 th:last-child,
 td:last-child {
   padding-right: 0; }
+
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -268,6 +386,7 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
+
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
@@ -281,6 +400,16 @@ form {
 .u-pull-left {
   float: left; }
 
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -292,188 +421,35 @@ form {
   display: table;
   clear: both; }
 
-.header {
-  padding: 30px;
-  overflow: hidden;
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
 
 
-}
+/* Larger than mobile */
+@media (min-width: 400px) {}
 
-.imgtransform {
-  max-width: 100%;
-  height:auto;
-}
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
 
-.center {
-display:block;
-margin:auto;
-}
+/* Larger than tablet */
+@media (min-width: 750px) {}
 
-.centerText {
-  text-align: center;
-}
+/* Larger than desktop */
+@media (min-width: 1000px) {}
 
-.paragraphText {
- text-align: justify;
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
 
-}
+/** custom **/
 
-.footer {
-font-family: 'calibri';
-font-size:1.0rem;
-text-align:right;
-padding-bottom: .5%;
-}
-
-
-.formatSVG {
-  max-width: 70%;
-  height:auto;
-  padding:2%;
-
-}
-
-
-.content {
-  padding-left: 2%;
-  padding-right:2%;
-  padding-bottom:2%;
-}
-
-/*nav bar*/
-
-/* Place the navbar at the bottom of the page, and make it stick */
-.navbar {
-  background-color: #333029;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Style the links inside the navigation bar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #CCC69C;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 2.0rem;
-  letter-spacing: .2rem;
-  font-family: 'magnesium-mvb';
-  text-shadow: 1px 1px 0px rgba(204, 198, 156, 0.1);
-}
-
-/* Change the color of links on hover */
-.navbar a:hover {
-  background-color: #CC3910;
-  color: #CCC69C;
-  font-family: 'magnesium-mvb';
-  text-shadow: 1px 1px 0px rgba(204, 198, 156, 0.1);
-}
-
-/* Add a green background color to the active link */
-.navbar a.active {
-  background-color: #CC3910;
-  color: #CCC69C;
-  font-family: 'magnesium-mvb';
-  text-shadow: 1px 1px 0px rgba(204, 198, 156, 0.1);
-}
-
-/* Hide the link that should open and close the navbar on small screens */
-.navbar .icon {
-  display: none;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* responsive image grid */ 
-
-.gridRow {
-  display: flex;
-  flex-wrap: wrap;
-  padding:1%;
-}
-
-.gridColumn {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.gridColumn img {
-  margin-top: 8px;
-  vertical-align: middle;
-  max-width: 10%;
-  height:auto;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .gridColumn {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .gridColumn {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-.imgResize {
-  max-width: 100%;
-  height:auto;
-  opacity: .5;
-}
-
-.imgResize:hover {
-  opacity:1.0;
-}
-
-.caption {
-  font-style: italic;
-  font-size: 1.3rem;
-  
-}
-
-/* parallax */
-
-.parallax {
-  /* The image used */
-  background-image: url('/images/parallax_demo/img1.jpg');
-
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#roundcorners {
+  border-radius: 5px;
+  padding:2.5%;
 }
