@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"; scroll-behavior: smooth;>
 <head>
 
   <!-- Basic Page Needs
@@ -37,51 +37,66 @@
 
   <div class="container" style="position: relative;padding-top: 1%;">
 
-    <div class="row" id="roundcorners" 
-         style="padding: 2.5%;">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-      <div class="six columns">
-     
-          <h1 >
-            Mia Hua // Portfolio
-          </h1>         
+    <div class="row" id="roundcorners" >
 
-      </div>
+        <div class="six columns">
+      
+            <h1 >
+              Mia Hua // Portfolio
+            </h1>         
 
-      <div class="two columns">
+        </div>
 
-      </div>
+        <div class="two columns">
 
-      <div class="one column">
-        <i class="fab fa-instagram fa-2x"></i>
-      </div>
+        </div>
 
-      <div class="one column">
-        <i class="fab fa-google fa-2x"></i>
-      </div>
+        <div class="one column">
+          <i class="fab fa-instagram fa-2x"></i>
+        </div>
 
-      <div class="one column">
-        <i class="fab fa-behance fa-2x"></i>
-      </div>
+        <div class="one column">
+          <i class="fab fa-google fa-2x"></i>
+        </div>
 
-      <div class="one column">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </div>
+        <div class="one column">
+          <i class="fab fa-behance fa-2x"></i>
+        </div>
 
-      <!--
-      <div class="one column" >
+        <div class="one column">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </div>
+
+    </div> <!--end div for row 1 -->
+
+<!--------------------------------------------------------->
+
+    <div class="row" id="roundcorners">
+      <div class="twelve columns">
+
+        <h4 style="text-transform: uppercase;">
+          About
+        </h4>
+
         <p>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-google"></i>
-          <i class="fab fa-behance"></i>
-          <i class="fab fa-linkedin"></i>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus mi, dignissim id finibus ut, tincidunt ut lacus. Morbi blandit feugiat odio, non egestas nisl tincidunt in. In quis imperdiet risus. Vestibulum vel lacinia lectus. Praesent interdum metus id massa aliquet fringilla. Donec venenatis sollicitudin dictum. Fusce feugiat dolor lorem, non malesuada metus scelerisque vitae. Proin non enim ac enim ullamcorper tempus sed eu neque. Mauris est sapien, blandit sed nunc at, volutpat mattis turpis. In commodo est nec bibendum finibus. Cras accumsan tempus congue. Sed eget felis augue. Etiam ornare tellus quam, a aliquet tellus accumsan eu. Praesent blandit convallis dui a placerat. Pellentesque posuere, ipsum a commodo malesuada, risus turpis elementum mi, vitae mattis lectus orci vel tortor. Nulla in libero et neque condimentum consectetur vel sit amet velit.
         </p>
-      </div>-->
+
+        <p>
+
+        </p>
+
+      </div>
+
+    </div> <!--end div for row 2 -->
+
+<!--------------------------------------------------------->
 
 
-    </div> <!--end div for row-->
 
-
+<!--------------------------------------------------------->
   </div> <!--end div for container-->
 
 
@@ -91,7 +106,25 @@
 
 <script>
 
+//Get the button:
+mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 </script>
   
