@@ -129,7 +129,8 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%; 
+  scroll-behavior: smooth;}
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
 
@@ -230,6 +231,7 @@ input[type="button"].button-primary {
 font-size: 1.5rem;
 min-width:200px;
 border-radius: 5px;
+scroll-behavior: smooth;
  }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -427,16 +429,4 @@ there.
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/*parallax scrolling*/
-
-.parallax {
-  background-image: url("images/parallax_demo/img1.jpg");
-  height:100%;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
