@@ -144,20 +144,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
 
   font-weight: 300; }
-h1 { font-size: 6rem; line-height: 1.2;  letter-spacing: .05rem;
+h1 { font-size: 7rem; line-height: 1.2;  letter-spacing: .05rem;
     font-family: 'Alata';
-    color:#40012A;
-    text-shadow: 1px 1px 0px rgb(89, 2, 66, 1);}
+    color:#F2F0EB;
+}
 h2 { font-size: 5rem; line-height: 1.25; letter-spacing: .05rem;     
   font-family: 'Alata';
   color:#40012A;
   text-shadow: 1px 1px 0px rgb(89, 2, 66, .25);}
 h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem;     font-family: 'caveat';
   color:#F2522E;
-  text-shadow: 1px 1px 0px rgb(169, 212, 217, .75);}
-h4 { font-size: .1rem; line-height: 1.35; letter-spacing: -.08rem;     font-family:'Alata' ;
-  color:red;
-  text-shadow: 1px 1px 0px rgb(169, 212, 217, .75);}
+  text-shadow: 1px 1px 0px rgb(242, 82, 46,.5);}
+h4 { font-size: .1rem; line-height: 1.35; letter-spacing: -.08rem;     font-family:'caveat' ;
+  color:#F2F0EB;
+  }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem;     font-family: 'Spectral';
   color:#261D1F;}
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0;     font-family: 'Spectral';
@@ -165,7 +165,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0;     font-family: '
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-size: 6.0rem; }
+  h1 { font-size: 7.0rem; }
   h2 { font-size: 5.0rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 3.0rem; }
@@ -181,7 +181,7 @@ p {
 /* Links
 ––––––––-–––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #F24130;  
+  color: #590242;  
   text-decoration: none;}
 a:hover {
   color: #F2522E; 
@@ -343,8 +343,8 @@ form {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
-  margin-bottom: 3.5rem;
   border-width: 0;
+  width:50%;
   border-top: 1px solid #E1E1E1; }
 
 
