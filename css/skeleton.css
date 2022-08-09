@@ -147,11 +147,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 6rem; line-height: 1.2;  letter-spacing: .05rem;
     font-family: 'Alata';
     color:#40012A;
-    text-shadow: 1px 1px 0px rgb(169, 212, 217, .75);}
+    text-shadow: 1px 1px 0px rgb(89, 2, 66, 1);}
 h2 { font-size: 5rem; line-height: 1.25; letter-spacing: .05rem;     
   font-family: 'Alata';
   color:#40012A;
-  text-shadow: 1px 1px 0px rgb(169, 212, 217, .75);}
+  text-shadow: 1px 1px 0px rgb(89, 2, 66, .25);}
 h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem;     font-family: 'caveat';
   color:#F2522E;
   text-shadow: 1px 1px 0px rgb(169, 212, 217, .75);}
@@ -433,7 +433,7 @@ there.
 }
 
 .shadows {
-  box-shadow: 2px 2px 0px rgb(189, 184, 191, 1);
+  box-shadow: 2px 2px 0px rgb(242, 82, 46,.5);
 }
 
 .icons{
@@ -459,4 +459,15 @@ there.
 .gallery{
   max-width: 90%;
   height: auto;
+}
+
+.navbarlinks  {
+  font-size: 2.5rem;
+  font-family: 'Alata';
+  text-transform: uppercase;
+  color:#F2F0EB;
+}
+
+.navbarlinks:hover  {
+color:#F2522E;
 }
