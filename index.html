@@ -37,17 +37,48 @@
 
   <div class="container" style="position: relative;padding-top: 1%;">
 
-    <button onclick="topFunction()" id="upBtn" title="Go to top" alt="go to top">
-      <i class="fas fa-angle-double-up"></i>
-    </button>
+
+    <div class=" topnav" id="myTopnav">
+
+      <div class="twelve columns">
+        <a href="#about"> <i class="far fa-id-card navicons"></i> ABOUT</a>
+
+        <a href="#portfolio"> <i class="fas fa-folder navicons"></i> PORTFOLIO</a>
+
+        <a href="#contact"><i class="fas fa-envelope-open-text naviconss"></i> CONTACT</a>
+
+        <a href="https://www.linkedin.com/in/mia-hua-69535b5b/" target="_blank" alt="LinkedIn"> 
+          <i class="fab fa-brands fa-linkedin naviconss"></i>
+
+        </a>
+
+        <a href="https://www.behance.net/miaconn" target="_blank" alt="Behance"> 
+          <i class="fab fa-brands fa-behance naviconss"></i>
+        </a>
+
+        <a href="https://www.instagram.com/miasmical/" target="_blank" alt="Instagram"> 
+              
+          <i class="fab fa-instagram navicons"></i>
+         </a>
+
+
+        <a href="javascript:void(0);" class="icon" onclick="navToggle()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    
+    </div>
+
+    <div class="row" style="padding-top:2.5%;"> &nbsp;</div>
 
     <div class="row" style="background-color: #40012A;padding-bottom: 2.5%;">
       <div class="twelve columns">
         <h1 class="center">MIA HUA</h1>
-        <h4 class="center"s>graphic design</h4>
+        <h4 class="center">graphic design</h4>
       </div>
     </div>
 
+    <!--
     <div class="row navbar" style="background-color: #590242;padding-top:2%;padding-bottom:2%;
   ">
 
@@ -72,7 +103,7 @@
         </div>
       </div>
 
-
+    -->
    
 
     <div class="row" id="about" style="padding-bottom: 10%;"> <!-- BEGIN ROW 2: MAIN BODY -->
@@ -331,8 +362,8 @@
     <p style="text-align:center;">
       Bothell based organization advocating for BIPOC in the North Shore region. <br>
       <a href="https://www.antiracist-communities.com/" target="_blank">antiracist-communities.com <i class="fa fa-external-link" aria-hidden="true"></i> </a> 
-    </p>
-<img src="images/portfolio/ARC_Presentation.png" class="center" style="max-height:100%;height:95%;width:auto;">
+    </p><!--
+<img src="images/portfolio/ARC_Presentation.png" class="center" style="max-height:100%;height:95%;width:auto;">-->
   </p>
 
 
@@ -374,7 +405,7 @@
 
     </div> <!--END MAIN DIV-->
 
-    <!------------------------------------------------------------>
+    <!-----------------------------------------------------------
 
     <footer class="footer">
 
@@ -409,7 +440,7 @@
         </div>
       </div>
     </footer>
-   
+  -->
 
 
 
@@ -423,35 +454,14 @@
 
 <script>
 
-//Get the button:
-mybutton = document.getElementById("upBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-function myFunction() {
-  var x = document.getElementById("myNavbar");
-  if (x.className === "navbar") {
+function navToggle() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
     x.className += " responsive";
   } else {
-    x.className = "navbar";
+    x.className = "topnav";
   }
 }
-
 
 </script>
   
